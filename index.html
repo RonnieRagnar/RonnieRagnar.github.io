@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
-  <title>Solid Maker — Llaveros personalizados en 3D · CDMX</title>
+  <title>Solid Maker — Impresión 3D · Llaveros y prototipos</title>
 
-  <meta name="description" content="Llaveros personalizados en 3D para mascotas, autos, empresas y eventos. Diseño único, impresión en resina y multicolor con Bambu Lab y Formlabs. Cotiza tu llavero en CDMX.">
-  <meta name="keywords" content="llaveros personalizados, impresión 3D, llaveros 3D, llaveros mascota, llaveros empresas, Bambu Lab, Formlabs, CDMX">
+  <meta name="description" content="Diseñamos e imprimimos tus proyectos desde llaveros, prototipos y piezas de gran calidad. Tecnología Bambu Lab + Formlabs en CDMX.">
+  <meta name="keywords" content="impresión 3D, llaveros personalizados, prototipos 3D, piezas 3D, Bambu Lab, Formlabs, CDMX">
   <meta name="author" content="Solid Maker">
-  <meta property="og:title" content="Solid Maker — Llaveros personalizados en 3D">
-  <meta property="og:description" content="Llaveros únicos para mascotas, autos, empresas y eventos. Tecnología Bambu Lab + Formlabs. CDMX.">
+  <meta property="og:title" content="Solid Maker — Impresión 3D de calidad">
+  <meta property="og:description" content="Diseñamos e imprimimos tus proyectos desde llaveros, prototipos y piezas de gran calidad.">
   <meta property="og:type" content="website">
-  <link rel="canonical" href="https://solidmaker.com" />
+  <link rel="canonical" href="https://solidmaker.mx" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -126,9 +126,8 @@
       display: flex; align-items: center;
       text-decoration: none; flex-shrink: 0;
     }
-    /* LOGO GIGANTE - 160px */
     .logo-img {
-      height: 160px;
+      height: 100px;
       width: auto;
       display: block;
       object-fit: contain;
@@ -166,9 +165,8 @@
       padding: 16px 28px 20px;
     }
     .mobile-menu.open { display: flex; }
-    /* LOGO EN MENÚ MÓVIL - 130px */
     .mobile-logo-img {
-      height: 130px;
+      height: 90px;
       width: auto;
       display: block;
       margin: 0 auto 16px auto;
@@ -231,13 +229,14 @@
       opacity: 0.4;
       border-radius: 2px;
     }
+    /* NUEVO TEXTO DEL HERO */
     .hero-sub {
-      font-size: 1.05rem;
-      color: rgba(255,255,255,0.85);
-      max-width: 480px;
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.9);
+      max-width: 580px;
       margin-bottom: 2rem;
       font-weight: 300;
-      line-height: 1.75;
+      line-height: 1.8;
     }
     .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 2.5rem; }
 
@@ -353,7 +352,7 @@
     }
     .benefit-card p { color: var(--gris-texto); font-size: 0.85rem; font-weight: 300; line-height: 1.65; }
 
-    /* ─ LLAVEROS ─ */
+    /* ─ LLAVEROS (Producto estrella) ─ */
     .llaveros-grid {
       display: grid; grid-template-columns: repeat(2, 1fr);
       gap: 16px;
@@ -394,7 +393,47 @@
     }
     .llavero-card.featured h3 { color: var(--azul); }
 
-    /* ─ SERVICES ─ */
+    /* ─ PROYECTOS DESTACADOS (Galería SIN tiempos) ─ */
+    .gallery-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    @media (min-width: 640px) { .gallery-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (min-width: 900px) { .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: 18px; } }
+
+    .gallery-item {
+      aspect-ratio: 4/3;
+      border-radius: 14px;
+      background: var(--blanco);
+      border: 1px solid var(--gris-claro);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 8px;
+      color: var(--gris-texto);
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-align: center;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      cursor: pointer;
+    }
+    .gallery-item .gi-icon { font-size: 2.5rem; opacity: 0.3; }
+    .gallery-item:hover {
+      border-color: var(--azul);
+      transform: scale(1.03);
+      box-shadow: var(--sombra-hover);
+    }
+    .gallery-item:hover .gi-label { color: var(--azul-oscuro); }
+    .gallery-item.large {
+      grid-column: span 2;
+      aspect-ratio: 16/7;
+    }
+    @media (max-width: 640px) { .gallery-item.large { grid-column: span 1; aspect-ratio: 4/3; } }
+
+    /* ─ SERVICIOS ─ */
     .services-grid {
       display: grid; grid-template-columns: 1fr;
       gap: 16px;
@@ -486,51 +525,6 @@
     }
     .tec-card.bambu ul li::before { background: var(--verde); }
     .tec-card.formlabs ul li::before { background: var(--azul); }
-
-    /* ─ GALERÍA CON TIEMPOS ─ */
-    .gallery-grid {
-      display: grid; grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-    }
-    @media (min-width: 640px) { .gallery-grid { grid-template-columns: repeat(3, 1fr); } }
-    @media (min-width: 900px) { .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; } }
-
-    .gallery-item {
-      aspect-ratio: 4/3;
-      border-radius: 12px;
-      background: var(--blanco);
-      border: 1px solid var(--gris-claro);
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      gap: 6px;
-      color: var(--gris-texto); font-size: 0.78rem;
-      font-weight: 400; text-align: center;
-      transition: all 0.2s;
-      position: relative; overflow: hidden;
-      padding: 16px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    }
-    .gallery-item .gi-icon { font-size: 2rem; opacity: 0.4; }
-    .gallery-item .gi-time {
-      font-size: 0.7rem;
-      font-weight: 600;
-      color: var(--azul);
-      background: rgba(51, 102, 153, 0.1);
-      padding: 2px 12px;
-      border-radius: 999px;
-      font-family: 'Space Grotesk', sans-serif;
-    }
-    .gallery-item:hover {
-      border-color: var(--azul);
-      transform: scale(1.02);
-      box-shadow: var(--sombra-hover);
-    }
-    .gallery-item:hover .gi-label { color: var(--azul-oscuro); }
-    .gallery-item.large {
-      grid-column: span 2;
-      aspect-ratio: 16/7;
-    }
-    @media (max-width: 640px) { .gallery-item.large { grid-column: span 1; aspect-ratio: 4/3; } }
 
     /* ─ TESTIMONIOS ─ */
     .testimonios-grid {
@@ -775,11 +769,11 @@
     }
     .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 
-    /* ─ FOOTER REDISEÑADO ─ */
+    /* ─ FOOTER ─ */
     footer {
       background: #1a1a1a;
       border-top: 1px solid rgba(255,255,255,0.08);
-      padding: 50px 0 40px;
+      padding: 44px 0;
       color: rgba(255,255,255,0.5);
     }
     .footer-grid {
@@ -816,9 +810,8 @@
       align-items: center;
       text-decoration: none;
     }
-    /* LOGO EN FOOTER - 90px */
     .footer-logo-img {
-      height: 90px;
+      height: 80px;
       width: auto;
       display: block;
       object-fit: contain;
@@ -940,15 +933,15 @@
            class="logo-img">
     </a>
     <ul class="nav-links">
-      <li><a href="#llaveros">Llaveros</a></li>
       <li><a href="#beneficios">Beneficios</a></li>
+      <li><a href="#llaveros">Llaveros</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
       <li><a href="#servicios">Servicios</a></li>
       <li><a href="#tecnologia">Tecnología</a></li>
-      <li><a href="#galeria">Galería</a></li>
       <li><a href="#testimonios">Testimonios</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
-    <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20llavero%20personalizado." class="btn btn-primary nav-cta" style="font-size:0.83rem; padding:10px 20px;">
+    <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20proyecto." class="btn btn-primary nav-cta" style="font-size:0.83rem; padding:10px 20px;">
       <i class="fab fa-whatsapp"></i> Cotiza ahora
     </a>
     <button class="hamburger" id="hamburger" aria-label="Menú">
@@ -959,15 +952,15 @@
     <img src="Logo Solid Maker.png"
          alt="Solid Maker"
          class="mobile-logo-img">
-    <a href="#llaveros">Llaveros</a>
     <a href="#beneficios">Beneficios</a>
+    <a href="#llaveros">Llaveros</a>
+    <a href="#proyectos">Proyectos</a>
     <a href="#servicios">Servicios</a>
     <a href="#tecnologia">Tecnología</a>
-    <a href="#galeria">Galería</a>
     <a href="#testimonios">Testimonios</a>
     <a href="#contacto">Contacto</a>
-    <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20llavero%20personalizado.">
-      <i class="fab fa-whatsapp"></i> Cotiza tu llavero →
+    <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20proyecto.">
+      <i class="fab fa-whatsapp"></i> Cotiza tu proyecto →
     </a>
   </nav>
 </header>
@@ -980,18 +973,19 @@
     <div class="hero-text">
       <div class="hero-kicker">
         <span class="tag" style="background:rgba(255,204,153,0.15); color:var(--beige); border-color:rgba(255,204,153,0.2);">
-          <i class="fas fa-key"></i> Llaveros personalizados · CDMX
+          <i class="fas fa-print"></i> Impresión 3D profesional · CDMX
         </span>
       </div>
       <h1>Tu idea.<br>Impresa en <em>3D</em>.<br>En tus manos.</h1>
+      <!-- NUEVO TEXTO DEL HERO -->
       <p class="hero-sub">
-        Diseñamos e imprimimos llaveros únicos para mascotas, autos, empresas y eventos. Tecnología Bambu Lab + Formlabs. Calidad profesional en CDMX.
+        Diseñamos e imprimimos tus proyectos desde llaveros, prototipos y piezas de gran calidad.
       </p>
       <div class="hero-btns">
-        <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20llavero%20personalizado." class="btn btn-primary">
-          <i class="fab fa-whatsapp"></i> Cotiza tu llavero
+        <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20proyecto." class="btn btn-primary">
+          <i class="fab fa-whatsapp"></i> Cotiza tu proyecto
         </a>
-        <a href="#galeria" class="btn btn-outline-white">Ver proyectos →</a>
+        <a href="#proyectos" class="btn btn-outline-white">Ver proyectos →</a>
       </div>
       <div class="trust-row">
         <span class="trust-item"><span class="dot"></span> 5 años de experiencia</span>
@@ -1004,9 +998,9 @@
     <div class="hero-visual">
       <div class="hero-card">
         <div class="hero-placeholder">
-          <div class="ph-icon">🔑</div>
+          <div class="ph-icon">🔧</div>
           <div class="ph-text">
-            Foto de tu llavero aquí<br>
+            Tu proyecto aquí<br>
             <span style="font-size:0.7rem; opacity:0.6">(agrega imagen real)</span>
           </div>
         </div>
@@ -1057,7 +1051,7 @@
   </div>
 </section>
 
-<!-- ─── LLAVEROS ─── -->
+<!-- ─── LLAVEROS (Producto estrella) ─── -->
 <section class="section-white" id="llaveros">
   <div class="container">
     <div class="sec-head">
@@ -1098,18 +1092,60 @@
       </div>
     </div>
     <div class="mt-btn">
-      <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20llavero%20personalizado." class="btn btn-primary">
+      <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20llavero." class="btn btn-primary">
         <i class="fab fa-whatsapp"></i> Cotiza tu llavero ahora
       </a>
     </div>
   </div>
 </section>
 
-<!-- ─── SERVICIOS ─── -->
-<section class="section-light" id="servicios">
+<!-- ─── PROYECTOS DESTACADOS (Galería SIN tiempos) ─── -->
+<section class="section-light" id="proyectos">
   <div class="container">
     <div class="sec-head">
-      <span class="tag">🛠️ También hacemos</span>
+      <span class="tag">🖼️ Proyectos destacados</span>
+      <h2>Nuestros trabajos</h2>
+      <p>Algunos de los proyectos que hemos desarrollado para nuestros clientes.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item large">
+        <div class="gi-icon">🔧</div>
+        <div class="gi-label">Proyecto destacado</div>
+      </div>
+      <div class="gallery-item">
+        <div class="gi-icon">🔑</div>
+        <div class="gi-label">Llavero personalizado</div>
+      </div>
+      <div class="gallery-item">
+        <div class="gi-icon">🏍️</div>
+        <div class="gi-label">Pieza para moto</div>
+      </div>
+      <div class="gallery-item">
+        <div class="gi-icon">🏢</div>
+        <div class="gi-label">Proyecto corporativo</div>
+      </div>
+      <div class="gallery-item">
+        <div class="gi-icon">🔩</div>
+        <div class="gi-label">Prototipo funcional</div>
+      </div>
+      <div class="gallery-item">
+        <div class="gi-icon">💡</div>
+        <div class="gi-label">Letrero LED</div>
+      </div>
+    </div>
+    <div class="mt-btn">
+      <a href="https://www.instagram.com/3d_solidmaker" target="_blank" class="btn btn-ghost">
+        <i class="fab fa-instagram"></i> Ver más en Instagram
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SERVICIOS ─── -->
+<section class="section-white" id="servicios">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">🛠️ Servicios</span>
       <h2>Más servicios de impresión 3D</h2>
       <p>Además de llaveros, ofrecemos soluciones para prototipos, escaneo y señalización.</p>
     </div>
@@ -1139,7 +1175,7 @@
 </section>
 
 <!-- ─── TECNOLOGÍA ─── -->
-<section class="section-white" id="tecnologia">
+<section class="section-light" id="tecnologia">
   <div class="container">
     <div class="sec-head">
       <span class="tag">🔧 Equipo profesional</span>
@@ -1173,61 +1209,13 @@
   </div>
 </section>
 
-<!-- ─── GALERÍA CON TIEMPOS ─── -->
-<section class="section-light" id="galeria">
-  <div class="container">
-    <div class="sec-head">
-      <span class="tag">🖼️ Nuestros trabajos</span>
-      <h2>Proyectos destacados</h2>
-      <p>Algunos de los llaveros y proyectos que hemos desarrollado para nuestros clientes.</p>
-    </div>
-    <div class="gallery-grid">
-      <div class="gallery-item large">
-        <div class="gi-icon">🔑</div>
-        <div class="gi-label">Llavero mascota 3D</div>
-        <div class="gi-time">⏱ 6 horas de impresión</div>
-      </div>
-      <div class="gallery-item">
-        <div class="gi-icon">🏍️</div>
-        <div class="gi-label">Llavero Harley Davidson</div>
-        <div class="gi-time">⏱ 4.5 horas</div>
-      </div>
-      <div class="gallery-item">
-        <div class="gi-icon">🐾</div>
-        <div class="gi-label">Mascota escaneada</div>
-        <div class="gi-time">⏱ 8 horas</div>
-      </div>
-      <div class="gallery-item">
-        <div class="gi-icon">🏢</div>
-        <div class="gi-label">Llavero corporativo</div>
-        <div class="gi-time">⏱ 3 horas</div>
-      </div>
-      <div class="gallery-item">
-        <div class="gi-icon">🔧</div>
-        <div class="gi-label">Prototipo funcional</div>
-        <div class="gi-time">⏱ 12 horas</div>
-      </div>
-      <div class="gallery-item">
-        <div class="gi-icon">💡</div>
-        <div class="gi-label">Letrero LED personalizado</div>
-        <div class="gi-time">⏱ 2 días</div>
-      </div>
-    </div>
-    <div class="mt-btn">
-      <a href="https://www.instagram.com/3d_solidmaker" target="_blank" class="btn btn-ghost">
-        <i class="fab fa-instagram"></i> Ver más en Instagram
-      </a>
-    </div>
-  </div>
-</section>
-
 <!-- ─── TESTIMONIOS ─── -->
 <section class="section-white" id="testimonios">
   <div class="container">
     <div class="sec-head">
       <span class="tag">🗣️ Lo que dicen nuestros clientes</span>
-      <h2>Transformamos ideas en llaveros únicos</h2>
-      <p>Historias reales de clientes que confiaron en nosotros para crear sus llaveros personalizados.</p>
+      <h2>Transformamos ideas en objetos reales</h2>
+      <p>Historias reales de clientes que confiaron en nosotros para crear sus proyectos.</p>
     </div>
     <div class="testimonios-grid">
       <div class="testimonio-card">
@@ -1395,8 +1383,8 @@
     <h2>¿Listo para crear<br>algo único?</h2>
     <p>Cotiza sin compromiso. Te asesoramos en diseño, material y tecnología.</p>
     <div class="cta-btns">
-      <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20llavero%20personalizado." class="btn" style="background: #fff; color: var(--azul-oscuro);">
-        <i class="fab fa-whatsapp"></i> Cotiza tu llavero ahora
+      <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20proyecto." class="btn" style="background: #fff; color: var(--azul-oscuro);">
+        <i class="fab fa-whatsapp"></i> Cotiza tu proyecto ahora
       </a>
       <a href="mailto:solid_maker@outlook.com" class="btn btn-outline-white">
         <i class="fas fa-envelope"></i> Enviar correo
@@ -1407,11 +1395,10 @@
 
 </main>
 
-<!-- ─── FOOTER REDISEÑADO ─── -->
+<!-- ─── FOOTER ─── -->
 <footer>
   <div class="container">
     <div class="footer-grid">
-      <!-- Columna 1: Logo y descripción -->
       <div class="footer-col footer-col-center">
         <a href="/" class="footer-logo">
           <img src="Logo Solid Maker.png"
@@ -1421,7 +1408,6 @@
         <p style="max-width:280px;">Transformamos tus ideas en objetos reales con impresión 3D de alta precisión.</p>
       </div>
 
-      <!-- Columna 2: Contacto rápido -->
       <div class="footer-col footer-col-center">
         <h4>Contacto</h4>
         <a href="https://wa.me/525574425356" style="color:#25D366;">+52 55 7442 5356</a>
@@ -1430,7 +1416,6 @@
         <p style="font-size:0.8rem; color:rgba(255,255,255,0.35);">L–V 9am–5pm · Sáb 9am–1pm</p>
       </div>
 
-      <!-- Columna 3: Redes Sociales -->
       <div class="footer-col footer-col-center">
         <h4>Síguenos</h4>
         <div class="footer-social">
@@ -1458,7 +1443,7 @@
 </footer>
 
 <!-- ─── WHATSAPP FLOAT ─── -->
-<a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20llavero%20personalizado." class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+<a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20proyecto." class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
   <i class="fab fa-whatsapp"></i>
 </a>
 
