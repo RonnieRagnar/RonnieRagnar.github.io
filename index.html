@@ -1326,91 +1326,44 @@
             box-shadow: 0 8px 24px rgba(51, 102, 153, 0.4);
         }
 
-        /* ─ CRÉDITOS SOSIALIZARTE (REDISEÑADO) ─ */
+        /* ─ CRÉDITOS SOSIALIZARTE (SIN CUADRO, ESTILO LIMPIO) ─ */
         .sosializarte-credit {
-            background: rgba(102, 153, 51, 0.08);
-            border: 1px solid rgba(102, 153, 51, 0.2);
-            border-radius: 12px;
-            padding: 20px 24px;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 14px;
-            flex-wrap: wrap;
-            transition: all 0.3s ease;
-            width: 100%;
-        }
-        .sosializarte-credit:hover {
-            background: rgba(102, 153, 51, 0.15);
-            border-color: var(--verde);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 16px rgba(102, 153, 51, 0.15);
-        }
-        .sosializarte-credit .credit-icon {
-            font-size: 1.8rem;
-            color: var(--verde);
-            opacity: 0.7;
-            transition: opacity 0.3s ease;
-        }
-        .sosializarte-credit:hover .credit-icon {
-            opacity: 1;
-        }
-        .sosializarte-credit .credit-text {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2px;
             font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.6);
+            color: rgba(255, 255, 255, 0.5);
             font-weight: 300;
-            text-align: center;
             line-height: 1.6;
         }
-        .sosializarte-credit .credit-text strong {
+        .sosializarte-credit strong {
             color: var(--verde);
             font-weight: 600;
-            transition: color 0.3s ease;
         }
-        .sosializarte-credit:hover .credit-text strong {
-            color: var(--beige);
-        }
-        .sosializarte-credit .credit-text a {
+        .sosializarte-credit a {
             color: var(--verde);
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 500;
             transition: color 0.3s ease;
-            position: relative;
         }
-        .sosializarte-credit .credit-text a::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--beige);
-            transition: width 0.3s ease;
-        }
-        .sosializarte-credit .credit-text a:hover {
+        .sosializarte-credit a:hover {
             color: var(--beige);
         }
-        .sosializarte-credit .credit-text a:hover::after {
-            width: 100%;
-        }
         .sosializarte-credit .credit-divider {
-            color: rgba(255, 255, 255, 0.1);
-            font-size: 0.6rem;
+            color: rgba(255, 255, 255, 0.15);
             padding: 0 4px;
         }
-        .sosializarte-credit .credit-badge {
-            font-size: 0.6rem;
+        .sosializarte-credit .credit-tag {
+            font-size: 0.65rem;
             text-transform: uppercase;
-            letter-spacing: 0.08em;
+            letter-spacing: 0.06em;
             color: rgba(255, 255, 255, 0.2);
             border: 1px solid rgba(255, 255, 255, 0.06);
             border-radius: 50px;
-            padding: 2px 12px;
-            transition: all 0.3s ease;
-        }
-        .sosializarte-credit:hover .credit-badge {
-            color: rgba(255, 255, 255, 0.4);
-            border-color: rgba(102, 153, 51, 0.3);
+            padding: 1px 10px;
+            display: inline-block;
+            margin-top: 2px;
         }
 
         .footer-divider {
@@ -1949,21 +1902,18 @@
                     <p style="font-size:0.8rem; color:rgba(255,255,255,0.35);">Conecta con nosotros</p>
                 </div>
 
+                <!-- NUEVA SECCIÓN "DESARROLLADO POR" - ESTILO LIMPIO Y PROFESIONAL -->
                 <div class="footer-col footer-col-center">
                     <h4 style="color: var(--verde);">Desarrollado por</h4>
                     <div class="sosializarte-credit">
-                        <span class="credit-icon">⚡</span>
-                        <div class="credit-text">
-                            <strong>Sosializarte</strong>
-                            <span class="credit-divider">·</span>
-                            <span style="color: rgba(255,255,255,0.3);">Estrategia · Diseño · Desarrollo</span>
-                            <br>
-                            <a href="https://sosializarte.com" target="_blank" rel="noopener noreferrer">
-                                sosializarte.com
-                            </a>
-                            <span class="credit-divider">·</span>
-                            <span class="credit-badge">Chatbot · Web · Automatización</span>
-                        </div>
+                        <strong>Sosializarte</strong>
+                        <span style="font-size:0.75rem; color:rgba(255,255,255,0.35);">
+                            Estrategia · Diseño · Desarrollo
+                        </span>
+                        <a href="https://sosializarte.com" target="_blank" rel="noopener noreferrer">
+                            sosializarte.com
+                        </a>
+                        <span class="credit-tag">Chatbot · Web · Automatización</span>
                     </div>
                 </div>
             </div>
