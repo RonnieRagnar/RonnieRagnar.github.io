@@ -1206,7 +1206,7 @@
     .wa-float {
       position: fixed;
       bottom: 22px;
-      right: 22px;
+      left: 22px; /* <-- WhatsApp configurado firmemente a la izquierda */
       z-index: 999;
       width: 56px;
       height: 56px;
@@ -1786,34 +1786,33 @@
   <i class="fab fa-whatsapp"></i>
 </a>
 
-<script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script>
   window.botpressWebChat.init({
-    botId: "e2cd3e85-167e-41f4-96a2-28f2a3453cf5",
-    hostUrl: "https://cdn.botpress.cloud",
-    messagingUrl: "https://messaging.botpress.cloud",
-    clientId: "467f4206-5c04-45c1-a173-bd1675055d3e",
-    webhookId: "467f4206-5c04-45c1-a173-bd1675055d3e",
-    lazySocket: true,
-    themeName: "prism",
-    botName: "Solid Maker",
-    avatarUrl: "https://solidmaker.mx/Logo Solid Maker.png",
-    stylesheet: "https://webchat.botpress.app/themes/v2/prism.css",
-    frontendVersion: "v2",
-    showPoweredBy: false,
-    useSessionStorage: true,
-    enableFileUpload: false,
-    enableConversationDeletion: true,
-    theme: {
-      colors: {
-        headerBg: "#669933",
-        headerText: "#FFFFFF",
-        inputBg: "#F8F5F0",
-        inputText: "#1A1A1A",
-        userMessageBg: "#336699",
-        userMessageText: "#FFFFFF",
-        botMessageBg: "#F8F5F0",
-        botMessageText: "#1A1A1A"
+    "botId": "e2cd3e85-167e-41f4-96a2-28f2a3453cf5",
+    "clientId": "467f4206-5c04-45c1-a173-bd1675055d3e",
+    "webhookId": "467f4206-5c04-45c1-a173-bd1675055d3e",
+    "hostUrl": "https://cdn.botpress.cloud",
+    "messagingUrl": "https://messaging.botpress.cloud",
+    "lazySocket": true,
+    "themeName": "prism",
+    "botName": "Solid Maker",
+    "avatarUrl": "https://solidmaker.mx/Logo Solid Maker.png",
+    "stylesheet": "https://webchat.botpress.app/themes/v2/prism.css",
+    "frontendVersion": "v2",
+    "showPoweredBy": false,
+    "useSessionStorage": true,
+    "enableConversationDeletion": true,
+    "theme": {
+      "colors": {
+        "headerBg": "#669933",
+        "headerText": "#FFFFFF",
+        "inputBg": "#F8F5F0",
+        "inputText": "#1A1A1A",
+        "userMessageBg": "#336699",
+        "userMessageText": "#FFFFFF",
+        "botMessageBg": "#F8F5F0",
+        "botMessageText": "#1A1A1A"
       }
     }
   });
