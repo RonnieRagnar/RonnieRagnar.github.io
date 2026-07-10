@@ -1,1832 +1,2021 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
-  <title>Solid Maker — Impresión 3D · Llaveros y prototipos</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <title>Solid Maker — Impresión 3D · Llaveros y prototipos</title>
 
-  <meta name="description" content="Diseñamos e imprimimos tus proyectos desde llaveros, prototipos y piezas de gran calidad. Tecnología Bambu Lab + Formlabs en CDMX.">
-  <meta name="keywords" content="impresión 3D, llaveros personalizados, prototipos 3D, piezas 3D, Bambu Lab, Formlabs, CDMX">
-  <meta name="author" content="Solid Maker">
-  <meta property="og:title" content="Solid Maker — Impresión 3D de calidad">
-  <meta property="og:description" content="Diseñamos e imprimimos tus proyectos desde llaveros, prototipos y piezas de gran calidad.">
-  <meta property="og:type" content="website">
-  <link rel="canonical" href="https://solidmaker.mx" />
+    <meta name="description" content="Diseñamos e imprimimos tus proyectos desde llaveros, prototipos y piezas de gran calidad. Tecnología Bambu Lab + Formlabs en CDMX.">
+    <meta name="keywords" content="impresión 3D, llaveros personalizados, prototipos 3D, piezas 3D, Bambu Lab, Formlabs, CDMX">
+    <meta name="author" content="Solid Maker">
+    <meta property="og:title" content="Solid Maker — Impresión 3D de calidad">
+    <meta property="og:description" content="Diseñamos e imprimimos tus proyectos desde llaveros, prototipos y piezas de gran calidad.">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://solidmaker.mx" />
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Solid Maker",
-    "description": "Impresión 3D profesional en CDMX. Llaveros personalizados, prototipos y piezas con tecnología Bambu Lab y Formlabs.",
-    "url": "https://solidmaker.mx",
-    "telephone": "+525574425356",
-    "email": "solid_maker@outlook.com",
-    "image": "https://solidmaker.mx/Logo Solid Maker.png",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Ciudad de México",
-      "addressRegion": "CDMX",
-      "addressCountry": "MX"
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "09:00",
-        "closes": "17:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "09:00",
-        "closes": "13:00"
-      }
-    ],
-    "sameAs": [
-      "https://www.instagram.com/solidmakermx",
-      "https://wa.me/525574425356"
-    ]
-  }
-  </script>
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Solid Maker",
+            "description": "Impresión 3D profesional en CDMX. Llaveros personalizados, prototipos y piezas con tecnología Bambu Lab y Formlabs.",
+            "url": "https://solidmaker.mx",
+            "telephone": "+525574425356",
+            "email": "solid_maker@outlook.com",
+            "image": "https://solidmaker.mx/Logo Solid Maker.png",
+            "priceRange": "$$",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ciudad de México",
+                "addressRegion": "CDMX",
+                "addressCountry": "MX"
+            },
+            "openingHoursSpecification": [{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "17:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "13:00"
+            }],
+            "sameAs": [
+                "https://www.instagram.com/solidmakermx",
+                "https://wa.me/525574425356"
+            ]
+        }
+    </script>
 
-  <script data-goatcounter="https://solidmaker.goatcounter.com/count"
-          async src="//gc.zgo.at/count.js"></script>
+    <!-- ═══ GOATCOUNTER ═══ -->
+    <script data-goatcounter="https://solidmaker.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- ═══ GOOGLE FONTS ═══ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- ═══ FONT AWESOME ═══ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
 
-    :root {
-      --beige: #FFCC99;
-      --verde: #669933;
-      --azul: #336699;
-      --rojo: #CC0033;
-      --verde-oscuro: #4d7a26;
-      --azul-oscuro: #1a3d5c;
-      --fondo: #f8f5f0;
-      --blanco: #ffffff;
-      --gris-claro: #e8e4de;
-      --gris-texto: #4a4a4a;
-      --sombra: 0 4px 20px rgba(0,0,0,0.08);
-      --sombra-hover: 0 8px 30px rgba(0,0,0,0.12);
-      --radius: 14px;
-      --radius-sm: 8px;
-    }
+        :root {
+            --beige: #FFCC99;
+            --verde: #669933;
+            --azul: #336699;
+            --rojo: #CC0033;
+            --verde-oscuro: #4d7a26;
+            --azul-oscuro: #1a3d5c;
+            --fondo: #f8f5f0;
+            --blanco: #ffffff;
+            --gris-claro: #e8e4de;
+            --gris-texto: #4a4a4a;
+            --sombra: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --sombra-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+            --radius: 14px;
+            --radius-sm: 8px;
+        }
 
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--fondo);
-      color: #1a1a1a;
-      line-height: 1.65;
-      overflow-x: hidden;
-    }
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--fondo);
+            color: #1a1a1a;
+            line-height: 1.65;
+            overflow-x: hidden;
+        }
 
-    .container { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
 
-    .tag {
-      display: inline-flex; align-items: center; gap: 6px;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em;
-      text-transform: uppercase;
-      background: rgba(51, 102, 153, 0.1);
-      color: var(--azul);
-      border: 1px solid rgba(51, 102, 153, 0.2);
-      padding: 5px 14px; border-radius: 999px;
-    }
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            background: rgba(51, 102, 153, 0.1);
+            color: var(--azul);
+            border: 1px solid rgba(51, 102, 153, 0.2);
+            padding: 5px 14px;
+            border-radius: 999px;
+        }
 
-    .btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 13px 28px; border-radius: 50px;
-      font-family: 'Space Grotesk', sans-serif;
-      font-weight: 600; font-size: 0.9rem;
-      text-decoration: none; cursor: pointer; border: none;
-      transition: all 0.25s ease;
-      white-space: nowrap; letter-spacing: 0.01em;
-    }
-    .btn-primary {
-      background: var(--verde);
-      color: #fff;
-      box-shadow: 0 4px 20px rgba(102, 153, 51, 0.3);
-    }
-    .btn-primary:hover {
-      background: var(--verde-oscuro);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 28px rgba(102, 153, 51, 0.35);
-    }
-    .btn-ghost {
-      background: transparent;
-      color: var(--azul);
-      border: 2px solid var(--azul);
-    }
-    .btn-ghost:hover {
-      background: var(--azul);
-      color: #fff;
-      transform: translateY(-2px);
-    }
-    .btn-wa {
-      background: #25D366;
-      color: #fff;
-    }
-    .btn-wa:hover {
-      background: #1da851;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 28px rgba(37, 211, 102, 0.3);
-    }
-    .btn-outline-white {
-      background: transparent;
-      color: #fff;
-      border: 2px solid rgba(255,255,255,0.3);
-    }
-    .btn-outline-white:hover {
-      background: rgba(255,255,255,0.1);
-      border-color: #fff;
-      transform: translateY(-2px);
-    }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 13px 28px;
+            border-radius: 50px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: all 0.25s ease;
+            white-space: nowrap;
+            letter-spacing: 0.01em;
+        }
+        .btn-primary {
+            background: var(--verde);
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(102, 153, 51, 0.3);
+        }
+        .btn-primary:hover {
+            background: var(--verde-oscuro);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(102, 153, 51, 0.35);
+        }
+        .btn-ghost {
+            background: transparent;
+            color: var(--azul);
+            border: 2px solid var(--azul);
+        }
+        .btn-ghost:hover {
+            background: var(--azul);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        .btn-wa {
+            background: #25D366;
+            color: #fff;
+        }
+        .btn-wa:hover {
+            background: #1da851;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(37, 211, 102, 0.3);
+        }
+        .btn-outline-white {
+            background: transparent;
+            color: #fff;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        .btn-outline-white:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #fff;
+            transform: translateY(-2px);
+        }
 
-    /* ─ HEADER ─ */
-    header {
-      position: sticky; top: 0; z-index: 200;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--gris-claro);
-    }
-    .navbar {
-      display: flex; align-items: center;
-      justify-content: space-between;
-      padding: 6px 0;
-      gap: 24px;
-    }
-    .logo {
-      display: flex; align-items: center;
-      text-decoration: none; flex-shrink: 0;
-    }
-    .logo-img {
-      height: 100px;
-      width: auto;
-      display: block;
-      object-fit: contain;
-    }
+        /* ─ HEADER ─ */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 200;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--gris-claro);
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 6px 0;
+            gap: 24px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+        .logo-img {
+            height: 100px;
+            width: auto;
+            display: block;
+            object-fit: contain;
+        }
 
-    .nav-links { display: none; gap: 1.75rem; list-style: none; }
-    .nav-links a {
-      color: var(--gris-texto); font-size: 0.88rem; font-weight: 500;
-      text-decoration: none; transition: color 0.2s;
-      font-family: 'Space Grotesk', sans-serif;
-    }
-    .nav-links a:hover { color: var(--azul); }
-    .nav-cta { display: none; }
+        .nav-links {
+            display: none;
+            gap: 1.75rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: var(--gris-texto);
+            font-size: 0.88rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.2s;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .nav-links a:hover {
+            color: var(--azul);
+        }
+        .nav-cta {
+            display: none;
+        }
 
-    @media (min-width: 768px) {
-      .nav-links { display: flex; }
-      .nav-cta { display: inline-flex; }
-    }
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex;
+            }
+            .nav-cta {
+                display: inline-flex;
+            }
+        }
 
-    .hamburger {
-      display: flex; flex-direction: column; gap: 5px;
-      cursor: pointer; padding: 4px; border: none;
-      background: none; flex-shrink: 0;
-    }
-    .hamburger span {
-      display: block; width: 22px; height: 1.5px;
-      background: #1a1a1a; border-radius: 2px;
-    }
-    @media (min-width: 768px) { .hamburger { display: none; } }
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 4px;
+            border: none;
+            background: none;
+            flex-shrink: 0;
+        }
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 1.5px;
+            background: #1a1a1a;
+            border-radius: 2px;
+        }
+        @media (min-width: 768px) {
+            .hamburger {
+                display: none;
+            }
+        }
 
-    .mobile-menu {
-      display: none; flex-direction: column;
-      background: #fff;
-      border-bottom: 1px solid var(--gris-claro);
-      padding: 16px 28px 20px;
-    }
-    .mobile-menu.open { display: flex; }
-    .mobile-logo-img {
-      height: 90px;
-      width: auto;
-      display: block;
-      margin: 0 auto 16px auto;
-      object-fit: contain;
-    }
-    .mobile-menu a {
-      padding: 12px 0;
-      color: var(--gris-texto); font-weight: 500;
-      text-decoration: none;
-      border-bottom: 1px solid var(--gris-claro);
-      font-size: 0.95rem;
-      font-family: 'Space Grotesk', sans-serif;
-    }
-    .mobile-menu a:last-child { border: none; color: var(--verde); font-weight: 600; }
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            background: #fff;
+            border-bottom: 1px solid var(--gris-claro);
+            padding: 16px 28px 20px;
+        }
+        .mobile-menu.open {
+            display: flex;
+        }
+        .mobile-logo-img {
+            height: 90px;
+            width: auto;
+            display: block;
+            margin: 0 auto 16px auto;
+            object-fit: contain;
+        }
+        .mobile-menu a {
+            padding: 12px 0;
+            color: var(--gris-texto);
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px solid var(--gris-claro);
+            font-size: 0.95rem;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .mobile-menu a:last-child {
+            border: none;
+            color: var(--verde);
+            font-weight: 600;
+        }
 
-    /* ─ HERO ─ */
-    .hero {
-      padding: 60px 0 80px;
-      background: linear-gradient(135deg, #1a2a3a 0%, #2a4a3a 100%);
-      position: relative;
-      overflow: hidden;
-      color: #fff;
-    }
-    .hero::before {
-      content: '';
-      position: absolute; top: -30%; right: -10%;
-      width: 500px; height: 500px;
-      background: radial-gradient(circle, rgba(255, 204, 153, 0.1), transparent 60%);
-      pointer-events: none;
-      border-radius: 50%;
-    }
-    .hero-wrap {
-      display: grid; grid-template-columns: 1fr;
-      gap: 40px;
-      align-items: center;
-      position: relative; z-index: 1;
-    }
-    @media (min-width: 900px) {
-      .hero { padding: 80px 0 100px; }
-      .hero-wrap { grid-template-columns: 1.15fr 1fr; gap: 64px; }
-    }
-    .hero-kicker { margin-bottom: 1.25rem; }
-    .hero h1 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(2.6rem, 6vw, 4.5rem);
-      font-weight: 700; line-height: 1.0;
-      letter-spacing: -0.03em;
-      margin-bottom: 1.5rem;
-    }
-    .hero h1 em {
-      font-style: normal;
-      color: var(--beige);
-      position: relative;
-    }
-    .hero h1 em::after {
-      content: '';
-      position: absolute; left: 0; right: 0; bottom: -3px;
-      height: 2px;
-      background: var(--verde);
-      opacity: 0.4;
-      border-radius: 2px;
-    }
-    .hero-sub {
-      font-size: 1.1rem;
-      color: rgba(255,255,255,0.9);
-      max-width: 580px;
-      margin-bottom: 2rem;
-      font-weight: 300;
-      line-height: 1.8;
-    }
-    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 2.5rem; }
+        /* ─ HERO ─ */
+        .hero {
+            padding: 60px 0 80px;
+            background: linear-gradient(135deg, #1a2a3a 0%, #2a4a3a 100%);
+            position: relative;
+            overflow: hidden;
+            color: #fff;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255, 204, 153, 0.1), transparent 60%);
+            pointer-events: none;
+            border-radius: 50%;
+        }
+        .hero-wrap {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        @media (min-width: 900px) {
+            .hero {
+                padding: 80px 0 100px;
+            }
+            .hero-wrap {
+                grid-template-columns: 1.15fr 1fr;
+                gap: 64px;
+            }
+        }
+        .hero-kicker {
+            margin-bottom: 1.25rem;
+        }
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2.6rem, 6vw, 4.5rem);
+            font-weight: 700;
+            line-height: 1.0;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+        }
+        .hero h1 em {
+            font-style: normal;
+            color: var(--beige);
+            position: relative;
+        }
+        .hero h1 em::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -3px;
+            height: 2px;
+            background: var(--verde);
+            opacity: 0.4;
+            border-radius: 2px;
+        }
+        .hero-sub {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 580px;
+            margin-bottom: 2rem;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+        .hero-btns {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
 
-    .trust-row {
-      display: flex; align-items: center; flex-wrap: wrap;
-      gap: 8px 14px;
-    }
-    .trust-item {
-      display: flex; align-items: center; gap: 6px;
-      font-size: 0.78rem; color: rgba(255,255,255,0.7);
-      font-family: 'Space Grotesk', sans-serif;
-      font-weight: 500; letter-spacing: 0.02em;
-    }
-    .trust-item .dot {
-      width: 5px; height: 5px; border-radius: 50%;
-      background: var(--beige); flex-shrink: 0;
-    }
-    .trust-sep { color: rgba(255,255,255,0.2); }
+        .trust-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px 14px;
+        }
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.78rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+        .trust-item .dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--beige);
+            flex-shrink: 0;
+        }
+        .trust-sep {
+            color: rgba(255, 255, 255, 0.2);
+        }
 
-    .hero-visual { position: relative; }
-    .hero-card {
-      background: rgba(255,255,255,0.08);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,0.15);
-      border-radius: 20px;
-      padding: 28px;
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-    .hero-card::before {
-      content: '';
-      position: absolute; top: 0; left: 0; right: 0; height: 1px;
-      background: linear-gradient(90deg, transparent, var(--beige), transparent);
-      opacity: 0.5;
-    }
-    .hero-img {
-      width: 100%;
-      height: 280px;
-      object-fit: cover;
-      border-radius: 12px;
-    }
-    .hero-stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin-top: 16px;
-    }
-    .hero-stat {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 10px;
-      padding: 14px 12px;
-      text-align: center;
-    }
-    .hero-stat .num {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: var(--beige);
-      display: block;
-    }
-    .hero-stat .lbl {
-      font-size: 0.7rem;
-      color: rgba(255,255,255,0.6);
-      font-weight: 400;
-      margin-top: 2px;
-      display: block;
-    }
+        .hero-visual {
+            position: relative;
+        }
+        .hero-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            padding: 28px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .hero-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--beige), transparent);
+            opacity: 0.5;
+        }
+        .hero-img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .hero-stat {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            padding: 14px 12px;
+            text-align: center;
+        }
+        .hero-stat .num {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--beige);
+            display: block;
+        }
+        .hero-stat .lbl {
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 400;
+            margin-top: 2px;
+            display: block;
+        }
 
-    /* ─ SECTIONS ─ */
-    .section-light { padding: 80px 0; background: var(--fondo); }
-    .section-white { padding: 80px 0; background: var(--blanco); }
+        /* ─ SECTIONS ─ */
+        .section-light {
+            padding: 80px 0;
+            background: var(--fondo);
+        }
+        .section-white {
+            padding: 80px 0;
+            background: var(--blanco);
+        }
 
-    .sec-head {
-      text-align: center;
-      max-width: 660px;
-      margin: 0 auto 3rem;
-    }
-    .sec-head .tag { margin-bottom: 1rem; }
-    .sec-head h2 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(1.9rem, 3vw, 2.7rem);
-      font-weight: 700;
-      letter-spacing: -0.025em;
-      margin-bottom: 0.9rem;
-      line-height: 1.1;
-      color: #1a1a1a;
-    }
-    .sec-head p {
-      color: var(--gris-texto);
-      font-size: 1rem;
-      font-weight: 300;
-    }
+        .sec-head {
+            text-align: center;
+            max-width: 660px;
+            margin: 0 auto 3rem;
+        }
+        .sec-head .tag {
+            margin-bottom: 1rem;
+        }
+        .sec-head h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(1.9rem, 3vw, 2.7rem);
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            margin-bottom: 0.9rem;
+            line-height: 1.1;
+            color: #1a1a1a;
+        }
+        .sec-head p {
+            color: var(--gris-texto);
+            font-size: 1rem;
+            font-weight: 300;
+        }
 
-    /* ─ BENEFICIOS ─ */
-    .benefits-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-      max-width: 900px;
-      margin: 0 auto 3rem auto;
-    }
-    @media (min-width: 640px) {
-      .benefits-grid { grid-template-columns: repeat(3, 1fr); }
-    }
+        /* ─ BENEFICIOS ─ */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            max-width: 900px;
+            margin: 0 auto 3rem auto;
+        }
+        @media (min-width: 640px) {
+            .benefits-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
 
-    .benefit-card {
-      background: var(--blanco);
-      border: 1px solid var(--gris-claro);
-      border-radius: var(--radius);
-      padding: 28px 22px;
-      text-align: center;
-      transition: all 0.25s ease;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-    }
-    .benefit-card:hover {
-      transform: translateY(-4px);
-      border-color: var(--azul);
-      box-shadow: var(--sombra-hover);
-    }
-    .benefit-card .ben-icon { font-size: 2rem; display: block; margin-bottom: 0.75rem; }
-    .benefit-card h3 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: var(--azul-oscuro);
-    }
-    .benefit-card p {
-      color: var(--gris-texto);
-      font-size: 0.85rem;
-      font-weight: 300;
-      line-height: 1.65;
-    }
+        .benefit-card {
+            background: var(--blanco);
+            border: 1px solid var(--gris-claro);
+            border-radius: var(--radius);
+            padding: 28px 22px;
+            text-align: center;
+            transition: all 0.25s ease;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+        }
+        .benefit-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--azul);
+            box-shadow: var(--sombra-hover);
+        }
+        .benefit-card .ben-icon {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+        .benefit-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--azul-oscuro);
+        }
+        .benefit-card p {
+            color: var(--gris-texto);
+            font-size: 0.85rem;
+            font-weight: 300;
+            line-height: 1.65;
+        }
 
-    /* ─ LLAVEROS (Producto estrella) ─ */
-    .llaveros-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-    }
-    @media (min-width: 640px) {
-      .llaveros-grid { grid-template-columns: repeat(3, 1fr); }
-    }
+        /* ─ LLAVEROS (Producto estrella) ─ */
+        .llaveros-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+        @media (min-width: 640px) {
+            .llaveros-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
 
-    .llavero-card {
-      background: var(--blanco);
-      border: 1px solid var(--gris-claro);
-      border-radius: var(--radius);
-      padding: 20px 18px;
-      text-align: center;
-      transition: all 0.25s ease;
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .llavero-card::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: var(--radius);
-      border: 2px solid transparent;
-      transition: border-color 0.25s;
-    }
-    .llavero-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--sombra-hover);
-    }
-    .llavero-card:hover::after { border-color: var(--azul); }
-    .llavero-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: contain;
-      border-radius: 10px;
-      margin-bottom: 12px;
-      background: #f8f5f0;
-    }
-    .llavero-card h3 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      letter-spacing: -0.01em;
-      color: var(--azul-oscuro);
-    }
-    .llavero-card p {
-      color: var(--gris-texto);
-      font-size: 0.85rem;
-      line-height: 1.65;
-      font-weight: 300;
-    }
-    .llavero-card.featured {
-      border-color: rgba(51, 102, 153, 0.3);
-      background: rgba(51, 102, 153, 0.04);
-    }
-    .llavero-card.featured h3 { color: var(--azul); }
+        .llavero-card {
+            background: var(--blanco);
+            border: 1px solid var(--gris-claro);
+            border-radius: var(--radius);
+            padding: 20px 18px;
+            text-align: center;
+            transition: all 0.25s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .llavero-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: var(--radius);
+            border: 2px solid transparent;
+            transition: border-color 0.25s;
+        }
+        .llavero-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--sombra-hover);
+        }
+        .llavero-card:hover::after {
+            border-color: var(--azul);
+        }
+        .llavero-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            background: #f8f5f0;
+        }
+        .llavero-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.01em;
+            color: var(--azul-oscuro);
+        }
+        .llavero-card p {
+            color: var(--gris-texto);
+            font-size: 0.85rem;
+            line-height: 1.65;
+            font-weight: 300;
+        }
+        .llavero-card.featured {
+            border-color: rgba(51, 102, 153, 0.3);
+            background: rgba(51, 102, 153, 0.04);
+        }
+        .llavero-card.featured h3 {
+            color: var(--azul);
+        }
 
-    /* ─ PROYECTOS DESTACADOS ─ */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-    }
-    @media (min-width: 640px) {
-      .gallery-grid { grid-template-columns: repeat(3, 1fr); }
-    }
-    @media (min-width: 900px) {
-      .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: 18px; }
-    }
+        /* ─ PROYECTOS DESTACADOS ─ */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+        @media (min-width: 640px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media (min-width: 900px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 18px;
+            }
+        }
 
-    .gallery-item {
-      aspect-ratio: 4/3;
-      border-radius: 14px;
-      overflow: hidden;
-      background: var(--blanco);
-      border: 1px solid var(--gris-claro);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s ease;
-      position: relative;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-      cursor: pointer;
-    }
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    .gallery-item .gi-label {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 50px 16px 16px 16px;
-      background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 40%, transparent 100%);
-      color: #fff;
-      font-size: 0.8rem;
-      font-weight: 500;
-      text-align: left;
-      letter-spacing: 0.02em;
-      z-index: 1;
-      pointer-events: none;
-      text-shadow: 0 1px 6px rgba(0,0,0,0.6);
-      line-height: 1.2;
-    }
-    .gallery-item:hover {
-      border-color: var(--azul);
-      transform: scale(1.02);
-      box-shadow: var(--sombra-hover);
-    }
-    .gallery-item.large {
-      grid-column: span 2;
-      aspect-ratio: 16/7;
-    }
-    @media (max-width: 640px) {
-      .gallery-item.large {
-        grid-column: span 1;
-        aspect-ratio: 4/3;
-      }
-    }
+        .gallery-item {
+            aspect-ratio: 4/3;
+            border-radius: 14px;
+            overflow: hidden;
+            background: var(--blanco);
+            border: 1px solid var(--gris-claro);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            cursor: pointer;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .gallery-item .gi-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 50px 16px 16px 16px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 40%, transparent 100%);
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-align: left;
+            letter-spacing: 0.02em;
+            z-index: 1;
+            pointer-events: none;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+            line-height: 1.2;
+        }
+        .gallery-item:hover {
+            border-color: var(--azul);
+            transform: scale(1.02);
+            box-shadow: var(--sombra-hover);
+        }
+        .gallery-item.large {
+            grid-column: span 2;
+            aspect-ratio: 16/7;
+        }
+        @media (max-width: 640px) {
+            .gallery-item.large {
+                grid-column: span 1;
+                aspect-ratio: 4/3;
+            }
+        }
 
-    /* ─ SERVICIOS ─ */
-    .services-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-    }
-    @media (min-width: 640px) {
-      .services-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (min-width: 900px) {
-      .services-grid { grid-template-columns: repeat(4, 1fr); }
-    }
+        /* ─ SERVICIOS ─ */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+        @media (min-width: 640px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 900px) {
+            .services-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
 
-    .svc-card {
-      background: var(--blanco);
-      border: 1px solid var(--gris-claro);
-      border-radius: var(--radius);
-      padding: 28px 22px;
-      transition: all 0.25s ease;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-      text-align: center;
-    }
-    .svc-card:hover {
-      transform: translateY(-4px);
-      border-color: var(--verde);
-      box-shadow: var(--sombra-hover);
-    }
-    .svc-card img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 12px;
-    }
-    .svc-card h3 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      letter-spacing: -0.01em;
-      color: var(--azul-oscuro);
-    }
-    .svc-card p {
-      color: var(--gris-texto);
-      font-size: 0.85rem;
-      line-height: 1.65;
-      font-weight: 300;
-    }
+        .svc-card {
+            background: var(--blanco);
+            border: 1px solid var(--gris-claro);
+            border-radius: var(--radius);
+            padding: 28px 22px;
+            transition: all 0.25s ease;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            text-align: center;
+        }
+        .svc-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--verde);
+            box-shadow: var(--sombra-hover);
+        }
+        .svc-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+        .svc-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.01em;
+            color: var(--azul-oscuro);
+        }
+        .svc-card p {
+            color: var(--gris-texto);
+            font-size: 0.85rem;
+            line-height: 1.65;
+            font-weight: 300;
+        }
 
-    /* ─ TECNOLOGÍA ─ */
-    .tec-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    @media (max-width: 640px) {
-      .tec-grid { grid-template-columns: 1fr; }
-    }
+        /* ─ TECNOLOGÍA ─ */
+        .tec-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        @media (max-width: 640px) {
+            .tec-grid {
+                grid-template-columns: 1fr;
+            }
+        }
 
-    .tec-card {
-      background: var(--blanco);
-      border: 1px solid var(--gris-claro);
-      border-radius: 18px;
-      padding: 32px 28px;
-      position: relative;
-      overflow: hidden;
-      transition: all 0.25s ease;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-      text-align: center;
-    }
-    .tec-card:hover {
-      border-color: var(--azul);
-      transform: translateY(-3px);
-      box-shadow: var(--sombra-hover);
-    }
-    .tec-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-    }
-    .tec-card.bambu::before { background: var(--verde); }
-    .tec-card.formlabs::before { background: var(--azul); }
+        .tec-card {
+            background: var(--blanco);
+            border: 1px solid var(--gris-claro);
+            border-radius: 18px;
+            padding: 32px 28px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.25s ease;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            text-align: center;
+        }
+        .tec-card:hover {
+            border-color: var(--azul);
+            transform: translateY(-3px);
+            box-shadow: var(--sombra-hover);
+        }
+        .tec-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+        }
+        .tec-card.bambu::before {
+            background: var(--verde);
+        }
+        .tec-card.formlabs::before {
+            background: var(--azul);
+        }
 
-    .tec-card .tec-marca {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.6rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.4rem;
-    }
-    .tec-card.bambu .tec-marca { color: var(--verde); }
-    .tec-card.formlabs .tec-marca { color: var(--azul); }
+        .tec-card .tec-marca {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.4rem;
+        }
+        .tec-card.bambu .tec-marca {
+            color: var(--verde);
+        }
+        .tec-card.formlabs .tec-marca {
+            color: var(--azul);
+        }
 
-    .tec-card .tec-type {
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--gris-texto);
-      margin-bottom: 1rem;
-      font-family: 'Space Grotesk', sans-serif;
-    }
-    .tec-card p {
-      color: var(--gris-texto);
-      font-size: 0.9rem;
-      line-height: 1.7;
-      font-weight: 300;
-    }
-    .tec-card ul {
-      list-style: none;
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    .tec-card ul li {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.83rem;
-      color: var(--gris-texto);
-      font-weight: 300;
-    }
-    .tec-card ul li::before {
-      content: '';
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-    .tec-card.bambu ul li::before { background: var(--verde); }
-    .tec-card.formlabs ul li::before { background: var(--azul); }
+        .tec-card .tec-type {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--gris-texto);
+            margin-bottom: 1rem;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .tec-card p {
+            color: var(--gris-texto);
+            font-size: 0.9rem;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+        .tec-card ul {
+            list-style: none;
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .tec-card ul li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.83rem;
+            color: var(--gris-texto);
+            font-weight: 300;
+        }
+        .tec-card ul li::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .tec-card.bambu ul li::before {
+            background: var(--verde);
+        }
+        .tec-card.formlabs ul li::before {
+            background: var(--azul);
+        }
 
-    /* ─ TESTIMONIOS ─ */
-    .testimonios-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    @media (min-width: 640px) {
-      .testimonios-grid { grid-template-columns: repeat(2, 1fr); }
-    }
+        /* ─ TESTIMONIOS ─ */
+        .testimonios-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        @media (min-width: 640px) {
+            .testimonios-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
 
-    .testimonio-card {
-      background: var(--blanco);
-      border: 1px solid var(--gris-claro);
-      border-radius: var(--radius);
-      padding: 28px 24px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-      transition: all 0.25s ease;
-      position: relative;
-    }
-    .testimonio-card::before {
-      content: '"';
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 4rem;
-      color: rgba(51, 102, 153, 0.08);
-      position: absolute;
-      top: 8px;
-      right: 18px;
-      line-height: 1;
-    }
-    .testimonio-card:hover {
-      transform: translateY(-3px);
-      border-color: var(--azul);
-      box-shadow: var(--sombra-hover);
-    }
-    .testimonio-card .stars {
-      color: #f5b342;
-      font-size: 0.9rem;
-      letter-spacing: 2px;
-      margin-bottom: 0.75rem;
-    }
-    .testimonio-card p {
-      font-size: 0.95rem;
-      font-weight: 300;
-      line-height: 1.7;
-      color: #1a1a1a;
-      margin-bottom: 1rem;
-      font-style: italic;
-    }
-    .testimonio-card .cliente {
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--azul);
-      font-family: 'Space Grotesk', sans-serif;
-    }
-    .testimonio-card .cliente span {
-      font-weight: 300;
-      color: var(--gris-texto);
-    }
+        .testimonio-card {
+            background: var(--blanco);
+            border: 1px solid var(--gris-claro);
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            transition: all 0.25s ease;
+            position: relative;
+        }
+        .testimonio-card::before {
+            content: '"';
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 4rem;
+            color: rgba(51, 102, 153, 0.08);
+            position: absolute;
+            top: 8px;
+            right: 18px;
+            line-height: 1;
+        }
+        .testimonio-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--azul);
+            box-shadow: var(--sombra-hover);
+        }
+        .testimonio-card .stars {
+            color: #f5b342;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.75rem;
+        }
+        .testimonio-card p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.7;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        .testimonio-card .cliente {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--azul);
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .testimonio-card .cliente span {
+            font-weight: 300;
+            color: var(--gris-texto);
+        }
 
-    /* ─ PROCESO ─ */
-    .proceso-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-      position: relative;
-    }
-    @media (min-width: 640px) {
-      .proceso-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (min-width: 900px) {
-      .proceso-grid { grid-template-columns: repeat(4, 1fr); }
-    }
+        /* ─ PROCESO ─ */
+        .proceso-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            position: relative;
+        }
+        @media (min-width: 640px) {
+            .proceso-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 900px) {
+            .proceso-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
 
-    .step-card {
-      background: var(--blanco);
-      border: 1px solid var(--gris-claro);
-      border-radius: var(--radius);
-      padding: 28px 22px;
-      transition: all 0.25s ease;
-      position: relative;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-      text-align: center;
-    }
-    .step-card:hover {
-      border-color: var(--verde);
-      transform: translateY(-3px);
-      box-shadow: var(--sombra-hover);
-    }
-    .step-num {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 2.8rem;
-      font-weight: 700;
-      color: rgba(102, 153, 51, 0.12);
-      line-height: 1;
-      margin-bottom: 1rem;
-      letter-spacing: -0.04em;
-    }
-    .step-card h3 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.05rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: var(--azul-oscuro);
-    }
-    .step-card p {
-      color: var(--gris-texto);
-      font-size: 0.85rem;
-      font-weight: 300;
-      line-height: 1.65;
-    }
+        .step-card {
+            background: var(--blanco);
+            border: 1px solid var(--gris-claro);
+            border-radius: var(--radius);
+            padding: 28px 22px;
+            transition: all 0.25s ease;
+            position: relative;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            text-align: center;
+        }
+        .step-card:hover {
+            border-color: var(--verde);
+            transform: translateY(-3px);
+            box-shadow: var(--sombra-hover);
+        }
+        .step-num {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: rgba(102, 153, 51, 0.12);
+            line-height: 1;
+            margin-bottom: 1rem;
+            letter-spacing: -0.04em;
+        }
+        .step-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--azul-oscuro);
+        }
+        .step-card p {
+            color: var(--gris-texto);
+            font-size: 0.85rem;
+            font-weight: 300;
+            line-height: 1.65;
+        }
 
-    /* ─ MATERIALES ─ */
-    .mat-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    @media (min-width: 640px) {
-      .mat-grid { grid-template-columns: repeat(4, 1fr); max-width: 100%; }
-    }
+        /* ─ MATERIALES ─ */
+        .mat-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        @media (min-width: 640px) {
+            .mat-grid {
+                grid-template-columns: repeat(4, 1fr);
+                max-width: 100%;
+            }
+        }
 
-    .mat-card {
-      background: var(--blanco);
-      border: 1px solid var(--gris-claro);
-      border-radius: 10px;
-      padding: 18px 12px;
-      text-align: center;
-      font-weight: 600;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.9rem;
-      color: var(--gris-texto);
-      transition: all 0.2s;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    }
-    .mat-card small {
-      display: block;
-      font-weight: 300;
-      font-size: 0.72rem;
-      color: var(--gris-texto);
-      margin-top: 4px;
-      font-family: 'DM Sans', sans-serif;
-    }
-    .mat-card:hover {
-      border-color: var(--azul);
-      transform: translateY(-3px);
-      box-shadow: var(--sombra-hover);
-      color: var(--azul);
-    }
+        .mat-card {
+            background: var(--blanco);
+            border: 1px solid var(--gris-claro);
+            border-radius: 10px;
+            padding: 18px 12px;
+            text-align: center;
+            font-weight: 600;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.9rem;
+            color: var(--gris-texto);
+            transition: all 0.2s;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+        .mat-card small {
+            display: block;
+            font-weight: 300;
+            font-size: 0.72rem;
+            color: var(--gris-texto);
+            margin-top: 4px;
+            font-family: 'DM Sans', sans-serif;
+        }
+        .mat-card:hover {
+            border-color: var(--azul);
+            transform: translateY(-3px);
+            box-shadow: var(--sombra-hover);
+            color: var(--azul);
+        }
 
-    /* ─ CONTACTO ─ */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 48px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    @media (min-width: 768px) {
-      .contact-grid { grid-template-columns: 1fr 1.1fr; }
-    }
+        /* ─ CONTACTO ─ */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 48px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        @media (min-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr 1.1fr;
+            }
+        }
 
-    .contact-block h3 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.5rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.5rem;
-      color: #1a1a1a;
-    }
-    .contact-block > p {
-      color: var(--gris-texto);
-      font-size: 0.9rem;
-      margin-bottom: 2rem;
-      font-weight: 300;
-    }
+        .contact-block h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+        }
+        .contact-block>p {
+            color: var(--gris-texto);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
 
-    .horarios-card {
-      background: var(--blanco);
-      border: 1px solid var(--gris-claro);
-      border-radius: var(--radius);
-      padding: 20px 22px;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-    }
-    .horarios-card .hc-title {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: var(--azul);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
-    .horarios-card p {
-      font-size: 0.88rem;
-      color: var(--gris-texto);
-      font-weight: 300;
-      margin: 3px 0;
-    }
+        .horarios-card {
+            background: var(--blanco);
+            border: 1px solid var(--gris-claro);
+            border-radius: var(--radius);
+            padding: 20px 22px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+        }
+        .horarios-card .hc-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--azul);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .horarios-card p {
+            font-size: 0.88rem;
+            color: var(--gris-texto);
+            font-weight: 300;
+            margin: 3px 0;
+        }
 
-    .contact-links { display: flex; flex-direction: column; gap: 2px; }
-    .contact-link {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 14px 0;
-      border-bottom: 1px solid var(--gris-claro);
-      text-decoration: none;
-      transition: all 0.2s;
-    }
-    .contact-link:last-child { border: none; }
-    .contact-link:hover .cl-text { color: var(--azul); }
-    .cl-icon {
-      width: 38px;
-      height: 38px;
-      flex-shrink: 0;
-      background: var(--fondo);
-      border: 1px solid var(--gris-claro);
-      border-radius: 9px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1rem;
-    }
-    .cl-label {
-      font-size: 0.72rem;
-      color: var(--gris-texto);
-      font-weight: 500;
-      font-family: 'Space Grotesk', sans-serif;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-    .cl-text {
-      font-size: 0.9rem;
-      color: #1a1a1a;
-      font-weight: 400;
-      transition: color 0.2s;
-    }
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--gris-claro);
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .contact-link:last-child {
+            border: none;
+        }
+        .contact-link:hover .cl-text {
+            color: var(--azul);
+        }
+        .cl-icon {
+            width: 38px;
+            height: 38px;
+            flex-shrink: 0;
+            background: var(--fondo);
+            border: 1px solid var(--gris-claro);
+            border-radius: 9px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+        .cl-label {
+            font-size: 0.72rem;
+            color: var(--gris-texto);
+            font-weight: 500;
+            font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .cl-text {
+            font-size: 0.9rem;
+            color: #1a1a1a;
+            font-weight: 400;
+            transition: color 0.2s;
+        }
 
-    /* ─ FORM ─ */
-    .lead-form {
-      background: var(--blanco);
-      border: 1px solid var(--gris-claro);
-      border-radius: 18px;
-      padding: 32px 28px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-    }
-    .lead-form h3 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-bottom: 0.35rem;
-      letter-spacing: -0.01em;
-      color: #1a1a1a;
-    }
-    .lead-form .f-sub {
-      color: var(--gris-texto);
-      font-size: 0.85rem;
-      margin-bottom: 1.5rem;
-      font-weight: 300;
-    }
-    .field { margin-bottom: 12px; }
-    .field input, .field textarea, .field select {
-      width: 100%;
-      padding: 12px 16px;
-      background: var(--fondo);
-      color: #1a1a1a;
-      border: 1px solid var(--gris-claro);
-      border-radius: 9px;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.9rem;
-      transition: border-color 0.2s;
-      outline: none;
-    }
-    .field input::placeholder, .field textarea::placeholder { color: var(--gris-texto); }
-    .field select { color: var(--gris-texto); }
-    .field input:focus, .field textarea:focus, .field select:focus {
-      border-color: var(--azul);
-    }
-    .field textarea { min-height: 90px; resize: vertical; }
-    .submit-btn {
-      width: 100%;
-      padding: 14px;
-      background: var(--verde);
-      color: #fff;
-      border: none;
-      border-radius: 9px;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.2s;
-      letter-spacing: 0.01em;
-    }
-    .submit-btn:hover { background: var(--verde-oscuro); }
-    .form-note {
-      text-align: center;
-      font-size: 0.7rem;
-      color: var(--gris-texto);
-      margin-top: 10px;
-    }
+        /* ─ FORM ─ */
+        .lead-form {
+            background: var(--blanco);
+            border: 1px solid var(--gris-claro);
+            border-radius: 18px;
+            padding: 32px 28px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+        }
+        .lead-form h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.35rem;
+            letter-spacing: -0.01em;
+            color: #1a1a1a;
+        }
+        .lead-form .f-sub {
+            color: var(--gris-texto);
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+        .field {
+            margin-bottom: 12px;
+        }
+        .field input,
+        .field textarea,
+        .field select {
+            width: 100%;
+            padding: 12px 16px;
+            background: var(--fondo);
+            color: #1a1a1a;
+            border: 1px solid var(--gris-claro);
+            border-radius: 9px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9rem;
+            transition: border-color 0.2s;
+            outline: none;
+        }
+        .field input::placeholder,
+        .field textarea::placeholder {
+            color: var(--gris-texto);
+        }
+        .field select {
+            color: var(--gris-texto);
+        }
+        .field input:focus,
+        .field textarea:focus,
+        .field select:focus {
+            border-color: var(--azul);
+        }
+        .field textarea {
+            min-height: 90px;
+            resize: vertical;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: var(--verde);
+            color: #fff;
+            border: none;
+            border-radius: 9px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+            letter-spacing: 0.01em;
+        }
+        .submit-btn:hover {
+            background: var(--verde-oscuro);
+        }
+        .form-note {
+            text-align: center;
+            font-size: 0.7rem;
+            color: var(--gris-texto);
+            margin-top: 10px;
+        }
 
-    /* ─ CTA FINAL ─ */
-    .cta-final {
-      padding: 80px 0;
-      text-align: center;
-      background: linear-gradient(135deg, var(--azul) 0%, var(--azul-oscuro) 100%);
-      color: #fff;
-      position: relative;
-      overflow: hidden;
-    }
-    .cta-final::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 60% 70% at 50% 50%, rgba(255,204,153,0.1) 0%, transparent 70%);
-    }
-    .cta-final .container { position: relative; z-index: 1; }
-    .cta-final h2 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(2rem, 3.5vw, 3.2rem);
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      margin-bottom: 0.9rem;
-      line-height: 1.05;
-    }
-    .cta-final p {
-      max-width: 480px;
-      margin: 0 auto 2rem;
-      color: rgba(255,255,255,0.85);
-      font-weight: 300;
-    }
-    .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        /* ─ CTA FINAL ─ */
+        .cta-final {
+            padding: 80px 0;
+            text-align: center;
+            background: linear-gradient(135deg, var(--azul) 0%, var(--azul-oscuro) 100%);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-final::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 60% 70% at 50% 50%, rgba(255, 204, 153, 0.1) 0%, transparent 70%);
+        }
+        .cta-final .container {
+            position: relative;
+            z-index: 1;
+        }
+        .cta-final h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2rem, 3.5vw, 3.2rem);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.9rem;
+            line-height: 1.05;
+        }
+        .cta-final p {
+            max-width: 480px;
+            margin: 0 auto 2rem;
+            color: rgba(255, 255, 255, 0.85);
+            font-weight: 300;
+        }
+        .cta-btns {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
-    /* ─ FOOTER ─ */
-    footer {
-      background: #1a1a1a;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      padding: 44px 0;
-      color: rgba(255,255,255,0.5);
-    }
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 32px;
-      align-items: start;
-    }
-    @media (min-width: 768px) {
-      .footer-grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 40px;
-      }
-    }
+        /* ─ FOOTER ─ */
+        footer {
+            background: #1a1a1a;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 44px 0;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            align-items: start;
+        }
+        @media (min-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 40px;
+            }
+        }
 
-    .footer-col {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .footer-col-center {
-      align-items: center;
-      text-align: center;
-    }
-    @media (min-width: 768px) {
-      .footer-col-center {
-        align-items: flex-start;
-        text-align: left;
-      }
-    }
+        .footer-col {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .footer-col-center {
+            align-items: center;
+            text-align: center;
+        }
+        @media (min-width: 768px) {
+            .footer-col-center {
+                align-items: flex-start;
+                text-align: left;
+            }
+        }
 
-    .footer-logo {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-    }
-    .footer-logo-img {
-      height: 80px;
-      width: auto;
-      display: block;
-      object-fit: contain;
-    }
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        .footer-logo-img {
+            height: 80px;
+            width: auto;
+            display: block;
+            object-fit: contain;
+        }
 
-    .footer-col h4 {
-      font-family: 'Space Grotesk', sans-serif;
-      color: #fff;
-      font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      margin-bottom: 4px;
-    }
-    .footer-col p {
-      font-size: 0.85rem;
-      color: rgba(255,255,255,0.5);
-      font-weight: 300;
-      line-height: 1.6;
-    }
-    .footer-col a {
-      color: rgba(255,255,255,0.5);
-      text-decoration: none;
-      font-size: 0.85rem;
-      transition: color 0.2s;
-      font-weight: 300;
-    }
-    .footer-col a:hover { color: var(--beige); }
+        .footer-col h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: #fff;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
+        }
+        .footer-col p {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 300;
+            line-height: 1.6;
+        }
+        .footer-col a {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+            font-weight: 300;
+        }
+        .footer-col a:hover {
+            color: var(--beige);
+        }
 
-    .footer-social {
-      display: flex;
-      gap: 12px;
-      margin-top: 4px;
-    }
-    .social-icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      font-size: 1.2rem;
-      color: #fff;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-    .social-icon:hover {
-      transform: translateY(-4px) scale(1.08);
-    }
-    .social-icon.wa {
-      background: #25D366;
-    }
-    .social-icon.wa:hover {
-      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
-    }
-    .social-icon.ig {
-      background: linear-gradient(135deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
-    }
-    .social-icon.ig:hover {
-      box-shadow: 0 8px 24px rgba(225, 48, 108, 0.4);
-    }
-    .social-icon.email {
-      background: var(--azul);
-    }
-    .social-icon.email:hover {
-      box-shadow: 0 8px 24px rgba(51, 102, 153, 0.4);
-    }
+        .footer-social {
+            display: flex;
+            gap: 12px;
+            margin-top: 4px;
+        }
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .social-icon:hover {
+            transform: translateY(-4px) scale(1.08);
+        }
+        .social-icon.wa {
+            background: #25D366;
+        }
+        .social-icon.wa:hover {
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+        }
+        .social-icon.ig {
+            background: linear-gradient(135deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+        }
+        .social-icon.ig:hover {
+            box-shadow: 0 8px 24px rgba(225, 48, 108, 0.4);
+        }
+        .social-icon.email {
+            background: var(--azul);
+        }
+        .social-icon.email:hover {
+            box-shadow: 0 8px 24px rgba(51, 102, 153, 0.4);
+        }
 
-    /* ─ CRÉDITOS SOSIALIZARTE ─ */
-    .sosializarte-credit {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 12px;
-      padding: 16px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-      transition: all 0.3s ease;
-    }
-    .sosializarte-credit:hover {
-      border-color: rgba(255,204,153,0.3);
-      background: rgba(255,255,255,0.06);
-    }
-    .sosializarte-credit .credit-text {
-      font-size: 0.8rem;
-      color: rgba(255,255,255,0.4);
-      font-weight: 300;
-      text-align: center;
-      line-height: 1.6;
-    }
-    .sosializarte-credit .credit-text strong {
-      color: var(--beige);
-      font-weight: 600;
-    }
-    .sosializarte-credit .credit-text a {
-      color: var(--beige);
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-    .sosializarte-credit .credit-text a:hover {
-      color: #fff;
-      text-decoration: underline;
-    }
-    .sosializarte-credit .credit-icon {
-      font-size: 1.2rem;
-      color: rgba(255,204,153,0.6);
-    }
-    .sosializarte-credit .credit-divider {
-      color: rgba(255,255,255,0.1);
-      font-size: 0.6rem;
-    }
+        /* ─ CRÉDITOS SOSIALIZARTE ─ */
+        .sosializarte-credit {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            transition: all 0.3s ease;
+        }
+        .sosializarte-credit:hover {
+            border-color: rgba(255, 204, 153, 0.3);
+            background: rgba(255, 255, 255, 0.06);
+        }
+        .sosializarte-credit .credit-text {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.4);
+            font-weight: 300;
+            text-align: center;
+            line-height: 1.6;
+        }
+        .sosializarte-credit .credit-text strong {
+            color: var(--beige);
+            font-weight: 600;
+        }
+        .sosializarte-credit .credit-text a {
+            color: var(--beige);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .sosializarte-credit .credit-text a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .sosializarte-credit .credit-icon {
+            font-size: 1.2rem;
+            color: rgba(255, 204, 153, 0.6);
+        }
+        .sosializarte-credit .credit-divider {
+            color: rgba(255, 255, 255, 0.1);
+            font-size: 0.6rem;
+        }
 
-    .footer-divider {
-      height: 1px;
-      background: rgba(255,255,255,0.08);
-      margin: 24px 0 16px;
-    }
-    .footer-bottom {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.75rem;
-      color: rgba(255,255,255,0.25);
-    }
-    @media (min-width: 768px) {
-      .footer-bottom {
-        flex-direction: row;
-        justify-content: space-between;
-      }
-    }
+        .footer-divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.08);
+            margin: 24px 0 16px;
+        }
+        .footer-bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.25);
+        }
+        @media (min-width: 768px) {
+            .footer-bottom {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
 
-    /* ─ WA FLOAT ─ */
-    .wa-float {
-      position: fixed;
-      bottom: 22px;
-      left: 22px; /* <-- WhatsApp configurado firmemente a la izquierda */
-      z-index: 999;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: #25D366;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.6rem;
-      box-shadow: 0 4px 18px rgba(37, 211, 102, 0.4);
-      text-decoration: none;
-      transition: transform 0.25s, box-shadow 0.25s;
-    }
-    .wa-float:hover {
-      transform: scale(1.08);
-      box-shadow: 0 8px 28px rgba(37, 211, 102, 0.5);
-    }
+        /* ─ WA FLOAT ─ */
+        .wa-float {
+            position: fixed;
+            bottom: 22px;
+            left: 22px;
+            /* WhatsApp a la izquierda */
+            z-index: 999;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #25D366;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            box-shadow: 0 4px 18px rgba(37, 211, 102, 0.4);
+            text-decoration: none;
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+        .wa-float:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 28px rgba(37, 211, 102, 0.5);
+        }
 
-    /* ─ HELPERS ─ */
-    .text-center { text-align: center; }
-    .mt-btn { display: flex; justify-content: center; margin-top: 2.5rem; }
-    .sep { color: rgba(255,255,255,0.2); margin: 0 4px; }
+        /* ─ HELPERS ─ */
+        .text-center {
+            text-align: center;
+        }
+        .mt-btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 2.5rem;
+        }
+        .sep {
+            color: rgba(255, 255, 255, 0.2);
+            margin: 0 4px;
+        }
 
-    @media (prefers-reduced-motion: reduce) {
-      * { transition: none !important; }
-    }
-  </style>
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                transition: none !important;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<header>
-  <div class="container navbar">
-    <a href="/" class="logo">
-      <img src="Logo Solid Maker.png"
-           alt="Solid Maker"
-           class="logo-img">
+    <header>
+        <div class="container navbar">
+            <a href="/" class="logo">
+                <img src="Logo Solid Maker.png" alt="Solid Maker" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#llaveros">Llaveros</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#tecnologia">Tecnología</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20proyecto." class="btn btn-primary nav-cta" style="font-size:0.83rem; padding:10px 20px;">
+                <i class="fab fa-whatsapp"></i> Cotiza ahora
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav class="mobile-menu" id="mobileMenu">
+            <img src="Logo Solid Maker.png" alt="Solid Maker" class="mobile-logo-img">
+            <a href="#beneficios">Beneficios</a>
+            <a href="#llaveros">Llaveros</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#tecnologia">Tecnología</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#contacto">Contacto</a>
+            <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20proyecto.">
+                <i class="fab fa-whatsapp"></i> Cotiza tu proyecto →
+            </a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="inicio">
+            <div class="container hero-wrap">
+                <div class="hero-text">
+                    <div class="hero-kicker">
+                        <span class="tag" style="background:rgba(255,204,153,0.15); color:var(--beige); border-color:rgba(255,204,153,0.2);">
+                            <i class="fas fa-print"></i> Impresión 3D profesional · CDMX
+                        </span>
+                    </div>
+                    <h1>Tu idea.<br>Impresa en <em>3D</em>.<br>En tus manos.</h1>
+                    <p class="hero-sub">
+                        Diseñamos e imprimimos tus proyectos desde llaveros, prototipos y piezas de gran calidad.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20proyecto." class="btn btn-primary">
+                            <i class="fab fa-whatsapp"></i> Cotiza tu proyecto
+                        </a>
+                        <a href="#proyectos" class="btn btn-outline-white">Ver proyectos →</a>
+                    </div>
+                    <div class="trust-row">
+                        <span class="trust-item"><span class="dot"></span> 5 años de experiencia</span>
+                        <span class="sep">·</span>
+                        <span class="trust-item"><span class="dot"></span> Entregas en 2–4 semanas</span>
+                        <span class="sep">·</span>
+                        <span class="trust-item"><span class="dot"></span> CDMX</span>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <img src="imagenes/hero/hero-inicio-nueva.jpg" alt="Proyecto de impresión 3D de Solid Maker" class="hero-img">
+                        <div class="hero-stats">
+                            <div class="hero-stat">
+                                <span class="num">5+</span>
+                                <span class="lbl">Años de experiencia</span>
+                            </div>
+                            <div class="hero-stat">
+                                <span class="num">25</span>
+                                <span class="lbl">Micras de precisión</span>
+                            </div>
+                            <div class="hero-stat">
+                                <span class="num">100%</span>
+                                <span class="lbl">Personalizado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-light" id="beneficios">
+            <div class="container">
+                <div class="sec-head">
+                    <span class="tag">✨ Beneficios clave</span>
+                    <h2>¿Por qué elegir Solid Maker?</h2>
+                    <p>Calidad, precisión y atención personalizada en cada proyecto.</p>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <span class="ben-icon">🎯</span>
+                        <h3>Diseño a tu medida</h3>
+                        <p>Escaneamos, diseñamos e imprimimos exactamente lo que imaginas. Sin límites creativos.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <span class="ben-icon">🔬</span>
+                        <h3>Precisión profesional</h3>
+                        <p>Impresión con resolución de hasta 25 micras. Cada detalle de tu diseño se mantiene intacto.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <span class="ben-icon">⚡</span>
+                        <h3>Entrega en CDMX</h3>
+                        <p>Producimos y entregamos en la ciudad. Sin esperas de importación ni envíos internacionales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-white" id="llaveros">
+            <div class="container">
+                <div class="sec-head">
+                    <span class="tag">⭐ Producto estrella</span>
+                    <h2>Llaveros para cada ocasión</h2>
+                    <p>Diseñamos e imprimimos llaveros únicos. Cada pieza es creada a medida.</p>
+                </div>
+                <div class="llaveros-grid">
+                    <div class="llavero-card featured">
+                        <img src="imagenes/llaveros/llavero-mascota.jpg" alt="Llavero de mascota" style="width: 100%; height: 200px; object-fit: contain; border-radius: 10px; margin-bottom: 12px; background: #f8f5f0;">
+                        <h3>Mascotas</h3>
+                        <p>Escaneamos a tu mascota y lo convertimos en un llavero 3D realista con tu nombre.</p>
+                    </div>
+                    <div class="llavero-card">
+                        <img src="imagenes/llaveros/llavero-auto.jpg" alt="Llavero de auto" style="width: 100%; height: 200px; object-fit: contain; border-radius: 10px; margin-bottom: 12px; background: #f8f5f0;">
+                        <h3>Autos y motos</h3>
+                        <p>Llaveros con el modelo exacto de tu vehículo favorito, a escala y con detalle.</p>
+                    </div>
+                    <div class="llavero-card">
+                        <img src="imagenes/llaveros/llavero-empresa.jpg" alt="Llavero para empresas" style="width: 100%; height: 200px; object-fit: contain; border-radius: 10px; margin-bottom: 12px; background: #f8f5f0;">
+                        <h3>Empresas y eventos</h3>
+                        <p>Tu logo impreso en 3D. Ideal para regalar a clientes, empleados o asistentes.</p>
+                    </div>
+                    <div class="llavero-card">
+                        <img src="imagenes/llaveros/llavero-personalizado-nuevo.jpg" alt="Llavero personalizado" style="width: 100%; height: 200px; object-fit: contain; border-radius: 10px; margin-bottom: 12px; background: #f8f5f0;">
+                        <h3>Diseño personalizado</h3>
+                        <p>Traes tu idea, nosotros la modelamos e imprimimos con acabado profesional.</p>
+                    </div>
+                    <div class="llavero-card">
+                        <img src="imagenes/llaveros/llavero-nfc.jpg" alt="Llavero con NFC" style="width: 100%; height: 200px; object-fit: contain; border-radius: 10px; margin-bottom: 12px; background: #f8f5f0;">
+                        <h3>Con chip NFC</h3>
+                        <p>Integra información digital: contacto, redes sociales o cualquier enlace.</p>
+                    </div>
+                    <div class="llavero-card">
+                        <img src="imagenes/llaveros/llavero-multicolor-v2.jpg" alt="Llavero multicolor" style="width: 100%; height: 200px; object-fit: contain; border-radius: 10px; margin-bottom: 12px; background: #f8f5f0;">
+                        <h3>Multicolor</h3>
+                        <p>Impresión en varios colores en una sola pieza. Sin pintura, sin pegatinas.</p>
+                    </div>
+                </div>
+                <div class="mt-btn">
+                    <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20llavero." class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i> Cotiza tu llavero ahora
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-light" id="proyectos">
+            <div class="container">
+                <div class="sec-head">
+                    <span class="tag">🖼️ Proyectos destacados</span>
+                    <h2>Nuestros trabajos</h2>
+                    <p>Algunos de los proyectos que hemos desarrollado para nuestros clientes.</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item large">
+                        <img src="imagenes/proyectos/proyecto-custom-intake.jpg" alt="Custom Intake Race Car">
+                        <span class="gi-label">🏎️ Custom Intake Race Car</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagenes/proyectos/proyecto-llavero-mascota.jpg" alt="Llavero mascota">
+                        <span class="gi-label">🐾 Llavero mascota 3D</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagenes/proyectos/proyecto-letrero-led.jpg" alt="Letrero LED">
+                        <span class="gi-label">💡 Letrero LED personalizado</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagenes/proyectos/proyecto-corporativo.jpg" alt="Proyecto corporativo">
+                        <span class="gi-label">🏢 Llaveros corporativos</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagenes/proyectos/proyecto-protipo-validacion.jpg" alt="Prototipos para validación">
+                        <span class="gi-label">🔬 Prototipos para validación</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagenes/proyectos/proyecto-escaneo-3d.jpg" alt="Escaneo 3D">
+                        <span class="gi-label">📷 Escaneo 3D</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagenes/proyectos/proyecto-multicolor.jpg" alt="Impresión multicolor">
+                        <span class="gi-label">🌈 Impresión multicolor</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagenes/proyectos/proyecto-porta-botella.jpg" alt="Porta botella impreso en 3D">
+                        <span class="gi-label">🍾 Porta botella 3D</span>
+                    </div>
+                </div>
+                <div class="mt-btn">
+                    <a href="https://www.instagram.com/solidmakermx" target="_blank" class="btn btn-ghost">
+                        <i class="fab fa-instagram"></i> Ver más en Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-white" id="servicios">
+            <div class="container">
+                <div class="sec-head">
+                    <span class="tag">🛠️ Servicios</span>
+                    <h2>Más servicios de impresión 3D</h2>
+                    <p>Además de llaveros, ofrecemos soluciones para prototipos, escaneo y señalización.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="svc-card">
+                        <img src="imagenes/servicios/servicio-fdm-nuevo.jpg" alt="Impresión FDM">
+                        <h3>Impresión FDM</h3>
+                        <p>Prototipos funcionales y piezas resistentes con filamentos PLA, ABS, PETG y técnicos.</p>
+                    </div>
+                    <div class="svc-card">
+                        <img src="imagenes/servicios/servicio-resina-nuevo.jpg" alt="Impresión en Resina">
+                        <h3>Impresión en Resina</h3>
+                        <p>Acabados de alta precisión con resolución de hasta 25 micras para piezas de detalle fino.</p>
+                    </div>
+                    <div class="svc-card">
+                        <img src="imagenes/servicios/servicio-escaneo.jpg" alt="Escaneo 3D">
+                        <h3>Escaneo 3D</h3>
+                        <p>Escaneo de alta fidelidad para personas, mascotas y objetos. Ideal para réplicas exactas.</p>
+                    </div>
+                    <div class="svc-card">
+                        <img src="imagenes/servicios/servicio-letrero.jpg" alt="Letreros LED">
+                        <h3>Letreros LED</h3>
+                        <p>Letreros luminosos personalizados con tu nombre o logo. Para negocios y eventos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-light" id="tecnologia">
+            <div class="container">
+                <div class="sec-head">
+                    <span class="tag">🔧 Equipo profesional</span>
+                    <h2>Tecnología de alto rendimiento</h2>
+                    <p>Dos impresoras, dos mundos de posibilidades. Elegimos la mejor para tu proyecto.</p>
+                </div>
+                <div class="tec-grid">
+                    <div class="tec-card bambu">
+                        <div class="tec-type">Impresión FDM</div>
+                        <div class="tec-marca">Bambu Lab</div>
+                        <p>La impresora FDM más rápida y precisa del mercado. Ideal para llaveros funcionales, multicolor y producción ágil de piezas resistentes.</p>
+                        <ul>
+                            <li>Multicolor hasta 16 colores</li>
+                            <li>Alta velocidad de impresión</li>
+                            <li>Materiales PLA, ABS, PETG, TPU</li>
+                            <li>Precisión de ±0.1 mm</li>
+                        </ul>
+                        <img src="imagenes/tecnologia/tecnologia-bambu-lab.jpg" alt="Bambu Lab" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px; margin-top: 12px;">
+                    </div>
+                    <div class="tec-card formlabs">
+                        <div class="tec-type">Impresión en Resina SLA</div>
+                        <div class="tec-marca">Formlabs</div>
+                        <p>Líder mundial en resina SLA. Para joyería, dental y piezas con detalle extremo. Acabados lisos y superficies perfectas.</p>
+                        <ul>
+                            <li>Resolución de hasta 25 micras</li>
+                            <li>Superficies ultra-lisas</li>
+                            <li>Resinas especializadas</li>
+                            <li>Ideal para miniaturas y joyería</li>
+                        </ul>
+                        <img src="imagenes/tecnologia/tecnologia-formlabs.jpg" alt="Formlabs" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px; margin-top: 12px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-white" id="testimonios">
+            <div class="container">
+                <div class="sec-head">
+                    <span class="tag">🗣️ Lo que dicen nuestros clientes</span>
+                    <h2>Transformamos ideas en objetos reales</h2>
+                    <p>Historias reales de clientes que confiaron en nosotros para crear sus proyectos.</p>
+                </div>
+                <div class="testimonios-grid">
+                    <div class="testimonio-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Necesitaba llaveros personalizados para un evento corporativo con menos de una semana de anticipación. Solid Maker no solo cumplió el plazo, sino que la calidad de impresión fue impecable. Mis socios quedaron impresionados."</p>
+                        <div class="cliente">— Ricardo M. <span>· Director de Marketing</span></div>
+                    </div>
+                    <div class="testimonio-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"El escaneo 3D de mi mascota fue tan preciso que parece una foto en 3D. Mi esposa no podía creer que un llavero capturara hasta los detalles más pequeños de su cara. Excelente servicio."</p>
+                        <div class="cliente">— Carlos G. <span>· Cliente particular</span></div>
+                    </div>
+                    <div class="testimonio-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Soy diseñador industrial y necesitaba un prototipo funcional en tiempo récord. En Solid Maker lo tuvieron listo en 3 días con una calidad que superó mis expectativas. Ahora los recomiendo a todos mis colegas."</p>
+                        <div class="cliente">— Miguel T. <span>· Diseñador industrial</span></div>
+                    </div>
+                    <div class="testimonio-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"El llavero con NFC que me hicieron es perfecto para mi negocio. Mis clientes escanean el llavero y van directo a mi perfil de Instagram. Una herramienta de marketing innovadora que no sabía que necesitaba."</p>
+                        <div class="cliente">— Laura M. <span>· Emprendedora</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-light" id="proceso">
+            <div class="container">
+                <div class="sec-head">
+                    <span class="tag">⚙️ Cómo trabajamos</span>
+                    <h2>De tu idea al objeto real</h2>
+                    <p>Un proceso simple, transparente y orientado a que obtengas exactamente lo que imaginas.</p>
+                </div>
+                <div class="proceso-grid">
+                    <div class="step-card">
+                        <div class="step-num">01</div>
+                        <h3>Cuéntanos tu idea</h3>
+                        <p>Comparte tu concepto, archivo o referencia. Te asesoramos sobre tecnología, material y diseño.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">02</div>
+                        <h3>Cotización clara</h3>
+                        <p>Recibes un presupuesto detallado con tiempo de entrega y recomendaciones técnicas. Sin sorpresas.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">03</div>
+                        <h3>Impresión profesional</h3>
+                        <p>Producimos tu pieza con impresoras de última generación, controlando calidad en cada etapa.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">04</div>
+                        <h3>Entrega en CDMX</h3>
+                        <p>Recibes tu objeto impreso, listo para usar o regalar. Envíos disponibles dentro de la ciudad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-white" id="materiales">
+            <div class="container">
+                <div class="sec-head">
+                    <span class="tag">🧪 Materiales</span>
+                    <h2>Materiales disponibles</h2>
+                    <p>Elegimos el material correcto según el uso final, el acabado deseado y tu presupuesto.</p>
+                </div>
+                <div class="mat-grid">
+                    <div class="mat-card">PLA<small>Uso general</small></div>
+                    <div class="mat-card">ABS<small>Alta resistencia</small></div>
+                    <div class="mat-card">PETG<small>Flexible y duradero</small></div>
+                    <div class="mat-card">Resina<small>Ultra-detalle</small></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-light" id="contacto">
+            <div class="container">
+                <div class="sec-head">
+                    <span class="tag">📬 Contacto</span>
+                    <h2>¿Tienes un proyecto en mente?</h2>
+                    <p>Cuéntanos tu idea y en menos de 24 horas te respondemos con una cotización.</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-block">
+                        <h3>Estamos en CDMX</h3>
+                        <p>Respondemos por WhatsApp, correo o a través del formulario. Elige lo que te sea más cómodo.</p>
+
+                        <div class="horarios-card">
+                            <div class="hc-title">⏱ Horarios de atención</div>
+                            <p>Lunes a Viernes · 9:00 AM — 5:00 PM</p>
+                            <p>Sábados · 9:00 AM — 1:00 PM</p>
+                        </div>
+
+                        <div class="contact-links">
+                            <a href="https://wa.me/525574425356" class="contact-link">
+                                <div class="cl-icon"><i class="fab fa-whatsapp" style="color: #25D366;"></i></div>
+                                <div>
+                                    <div class="cl-label">WhatsApp</div>
+                                    <div class="cl-text">+52 55 7442 5356</div>
+                                </div>
+                            </a>
+                            <a href="mailto:solid_maker@outlook.com" class="contact-link">
+                                <div class="cl-icon"><i class="fas fa-envelope" style="color: var(--azul);"></i></div>
+                                <div>
+                                    <div class="cl-label">Correo electrónico</div>
+                                    <div class="cl-text">solid_maker@outlook.com</div>
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/solidmakermx" target="_blank" class="contact-link">
+                                <div class="cl-icon"><i class="fab fa-instagram" style="color: #E1306C;"></i></div>
+                                <div>
+                                    <div class="cl-label">Instagram</div>
+                                    <div class="cl-text">@solidmakermx</div>
+                                </div>
+                            </a>
+                            <a href="#" class="contact-link">
+                                <div class="cl-icon"><i class="fas fa-map-marker-alt" style="color: var(--verde);"></i></div>
+                                <div>
+                                    <div class="cl-label">Ubicación</div>
+                                    <div class="cl-text">Ciudad de México, México</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div style="margin-top: 1.5rem;">
+                            <a href="https://wa.me/525574425356?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20me%20interesa%20cotizar%20un%20proyecto." class="btn btn-wa" style="width: 100%; justify-content: center;">
+                                <i class="fab fa-whatsapp"></i> Cotizar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lead-form">
+                        <h3>Envíanos tu proyecto</h3>
+                        <p class="f-sub">Te respondemos en menos de 24 horas hábiles</p>
+                        <form action="https://formspree.io/f/mvzjabgz" method="POST">
+                            <div class="field"><input type="text" name="nombre" placeholder="Tu nombre" required></div>
+                            <div class="field"><input type="email" name="email" placeholder="Tu correo electrónico" required></div>
+                            <div class="field">
+                                <select name="interes">
+                                    <option value="">¿Qué te interesa?</option>
+                                    <option>Llavero personalizado</option>
+                                    <option>Llavero con NFC</option>
+                                    <option>Llavero para empresa/evento</option>
+                                    <option>Impresión FDM</option>
+                                    <option>Impresión en Resina</option>
+                                    <option>Escaneo 3D</option>
+                                    <option>Letreros LED</option>
+                                    <option>Quiero asesoría</option>
+                                </select>
+                            </div>
+                            <div class="field"><textarea name="mensaje" placeholder="Cuéntanos tu idea, diseño o cantidad..."></textarea></div>
+                            <button type="submit" class="submit-btn">Enviar proyecto →</button>
+                            <p class="form-note">Sin spam. Tus datos solo se usan para contactarte.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-final">
+            <div class="container">
+                <h2>¿Listo para crear<br>algo único?</h2>
+                <p>Cotiza sin compromiso. Te asesoramos en diseño, material y tecnología.</p>
+                <div class="cta-btns">
+                    <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20proyecto." class="btn" style="background: #fff; color: var(--azul-oscuro);">
+                        <i class="fab fa-whatsapp"></i> Cotiza tu proyecto ahora
+                    </a>
+                    <a href="mailto:solid_maker@outlook.com" class="btn btn-outline-white">
+                        <i class="fas fa-envelope"></i> Enviar correo
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-col-center">
+                    <a href="/" class="footer-logo">
+                        <img src="Logo Solid Maker.png" alt="Solid Maker" class="footer-logo-img">
+                    </a>
+                    <p style="max-width:280px;">Transformamos tus ideas en objetos reales con impresión 3D de alta precisión.</p>
+                </div>
+
+                <div class="footer-col footer-col-center">
+                    <h4>Contacto</h4>
+                    <a href="https://wa.me/525574425356" style="color:#25D366;">+52 55 7442 5356</a>
+                    <a href="mailto:solid_maker@outlook.com">solid_maker@outlook.com</a>
+                    <p>📍 Ciudad de México</p>
+                    <p style="font-size:0.8rem; color:rgba(255,255,255,0.35);">L–V 9am–5pm · Sáb 9am–1pm</p>
+                </div>
+
+                <div class="footer-col footer-col-center">
+                    <h4>Síguenos</h4>
+                    <div class="footer-social">
+                        <a href="https://wa.me/525574425356" target="_blank" class="social-icon wa" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/solidmakermx" target="_blank" class="social-icon ig" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:solid_maker@outlook.com" class="social-icon email" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <p style="font-size:0.8rem; color:rgba(255,255,255,0.35);">Conecta con nosotros</p>
+                </div>
+
+                <div class="footer-col footer-col-center">
+                    <h4 style="color: var(--beige);">Desarrollado por</h4>
+                    <div class="sosializarte-credit">
+                        <div style="display: flex; flex-direction: column; align-items: center; gap: 6px; width: 100%;">
+                            <span style="font-size: 1.6rem; filter: grayscale(0.3);">⚡</span>
+                            <div class="credit-text">
+                                <strong>Sosializarte</strong><br>
+                                <span style="font-size: 0.7rem; color: rgba(255,255,255,0.3);">
+                                    Estrategia · Diseño · Desarrollo
+                                </span>
+                                <br>
+                                <span style="font-size: 0.65rem; color: rgba(255,255,255,0.25);">
+                                    <a href="#" style="color: rgba(255,255,255,0.3);">sosializarte.com</a>
+                                </span>
+                            </div>
+                            <div style="display: flex; gap: 8px; margin-top: 4px;">
+                                <span style="font-size: 0.6rem; color: rgba(255,255,255,0.15);">✦</span>
+                                <span style="font-size: 0.6rem; color: rgba(255,255,255,0.15);">✦</span>
+                                <span style="font-size: 0.6rem; color: rgba(255,255,255,0.15);">✦</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="font-size:0.65rem; color:rgba(255,255,255,0.2); margin-top: 4px;">
+                        Chatbot · Web · Automatización
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <span>© 2025 Solid Maker — Todos los derechos reservados</span>
+                <span>Hecho con ❤️ en CDMX por <strong style="color: var(--beige); font-weight: 400;">Sosializarte</strong></span>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20proyecto." class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
     </a>
-    <ul class="nav-links">
-      <li><a href="#beneficios">Beneficios</a></li>
-      <li><a href="#llaveros">Llaveros</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#tecnologia">Tecnología</a></li>
-      <li><a href="#testimonios">Testimonios</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-    <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20proyecto." class="btn btn-primary nav-cta" style="font-size:0.83rem; padding:10px 20px;">
-      <i class="fab fa-whatsapp"></i> Cotiza ahora
-    </a>
-    <button class="hamburger" id="hamburger" aria-label="Menú">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <nav class="mobile-menu" id="mobileMenu">
-    <img src="Logo Solid Maker.png"
-         alt="Solid Maker"
-         class="mobile-logo-img">
-    <a href="#beneficios">Beneficios</a>
-    <a href="#llaveros">Llaveros</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#tecnologia">Tecnología</a>
-    <a href="#testimonios">Testimonios</a>
-    <a href="#contacto">Contacto</a>
-    <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20proyecto.">
-      <i class="fab fa-whatsapp"></i> Cotiza tu proyecto →
-    </a>
-  </nav>
-</header>
 
-<main>
+    <!-- ═══ BOTPRESS CHATBOT - SOLID MAKER ═══ -->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script>
+        window.botpressWebChat.init({
+            "botId": "e2cd3e85-167e-41f4-96a2-28f2a3453cf5",
+            "clientId": "467f4206-5c04-45c1-a173-bd1675055d3e",
+            /* Se eliminaron hostUrl y messagingUrl para evitar el error de NoSuchKey */
+            "lazySocket": true,
+            "themeName": "prism",
+            "botName": "Solid Maker",
+            "avatarUrl": "https://solidmaker.mx/Logo Solid Maker.png",
+            "stylesheet": "https://webchat.botpress.app/themes/v2/prism.css",
+            "frontendVersion": "v2",
+            "showPoweredBy": false,
+            "useSessionStorage": true,
+            "enableConversationDeletion": true,
+            "theme": {
+                "colors": {
+                    "headerBg": "#669933",
+                    "headerText": "#FFFFFF",
+                    "inputBg": "#F8F5F0",
+                    "inputText": "#1A1A1A",
+                    "userMessageBg": "#336699",
+                    "userMessageText": "#FFFFFF",
+                    "botMessageBg": "#F8F5F0",
+                    "botMessageText": "#1A1A1A"
+                }
+            }
+        });
+    </script>
 
-<section class="hero" id="inicio">
-  <div class="container hero-wrap">
-    <div class="hero-text">
-      <div class="hero-kicker">
-        <span class="tag" style="background:rgba(255,204,153,0.15); color:var(--beige); border-color:rgba(255,204,153,0.2);">
-          <i class="fas fa-print"></i> Impresión 3D profesional · CDMX
-        </span>
-      </div>
-      <h1>Tu idea.<br>Impresa en <em>3D</em>.<br>En tus manos.</h1>
-      <p class="hero-sub">
-        Diseñamos e imprimimos tus proyectos desde llaveros, prototipos y piezas de gran calidad.
-      </p>
-      <div class="hero-btns">
-        <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20proyecto." class="btn btn-primary">
-          <i class="fab fa-whatsapp"></i> Cotiza tu proyecto
-        </a>
-        <a href="#proyectos" class="btn btn-outline-white">Ver proyectos →</a>
-      </div>
-      <div class="trust-row">
-        <span class="trust-item"><span class="dot"></span> 5 años de experiencia</span>
-        <span class="sep">·</span>
-        <span class="trust-item"><span class="dot"></span> Entregas en 2–4 semanas</span>
-        <span class="sep">·</span>
-        <span class="trust-item"><span class="dot"></span> CDMX</span>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="hero-card">
-        <img src="imagenes/hero/hero-inicio-nueva.jpg"
-             alt="Proyecto de impresión 3D de Solid Maker"
-             class="hero-img">
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <span class="num">5+</span>
-            <span class="lbl">Años de experiencia</span>
-          </div>
-          <div class="hero-stat">
-            <span class="num">25</span>
-            <span class="lbl">Micras de precisión</span>
-          </div>
-          <div class="hero-stat">
-            <span class="num">100%</span>
-            <span class="lbl">Personalizado</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-light" id="beneficios">
-  <div class="container">
-    <div class="sec-head">
-      <span class="tag">✨ Beneficios clave</span>
-      <h2>¿Por qué elegir Solid Maker?</h2>
-      <p>Calidad, precisión y atención personalizada en cada proyecto.</p>
-    </div>
-    <div class="benefits-grid">
-      <div class="benefit-card">
-        <span class="ben-icon">🎯</span>
-        <h3>Diseño a tu medida</h3>
-        <p>Escaneamos, diseñamos e imprimimos exactamente lo que imaginas. Sin límites creativos.</p>
-      </div>
-      <div class="benefit-card">
-        <span class="ben-icon">🔬</span>
-        <h3>Precisión profesional</h3>
-        <p>Impresión con resolución de hasta 25 micras. Cada detalle de tu diseño se mantiene intacto.</p>
-      </div>
-      <div class="benefit-card">
-        <span class="ben-icon">⚡</span>
-        <h3>Entrega en CDMX</h3>
-        <p>Producimos y entregamos en la ciudad. Sin esperas de importación ni envíos internacionales.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-white" id="llaveros">
-  <div class="container">
-    <div class="sec-head">
-      <span class="tag">⭐ Producto estrella</span>
-      <h2>Llaveros para cada ocasión</h2>
-      <p>Diseñamos e imprimimos llaveros únicos. Cada pieza es creada a medida.</p>
-    </div>
-    <div class="llaveros-grid">
-      <div class="llavero-card featured">
-        <img src="imagenes/llaveros/llavero-mascota.jpg" alt="Llavero de mascota" style="width: 100%; height: 200px; object-fit: contain; border-radius: 10px; margin-bottom: 12px; background: #f8f5f0;">
-        <h3>Mascotas</h3>
-        <p>Escaneamos a tu mascota y lo convertimos en un llavero 3D realista con tu nombre.</p>
-      </div>
-      <div class="llavero-card">
-        <img src="imagenes/llaveros/llavero-auto.jpg" alt="Llavero de auto" style="width: 100%; height: 200px; object-fit: contain; border-radius: 10px; margin-bottom: 12px; background: #f8f5f0;">
-        <h3>Autos y motos</h3>
-        <p>Llaveros con el modelo exacto de tu vehículo favorito, a escala y con detalle.</p>
-      </div>
-      <div class="llavero-card">
-        <img src="imagenes/llaveros/llavero-empresa.jpg" alt="Llavero para empresas" style="width: 100%; height: 200px; object-fit: contain; border-radius: 10px; margin-bottom: 12px; background: #f8f5f0;">
-        <h3>Empresas y eventos</h3>
-        <p>Tu logo impreso en 3D. Ideal para regalar a clientes, empleados o asistentes.</p>
-      </div>
-      <div class="llavero-card">
-        <img src="imagenes/llaveros/llavero-personalizado-nuevo.jpg" alt="Llavero personalizado" style="width: 100%; height: 200px; object-fit: contain; border-radius: 10px; margin-bottom: 12px; background: #f8f5f0;">
-        <h3>Diseño personalizado</h3>
-        <p>Traes tu idea, nosotros la modelamos e imprimimos con acabado profesional.</p>
-      </div>
-      <div class="llavero-card">
-        <img src="imagenes/llaveros/llavero-nfc.jpg" alt="Llavero con NFC" style="width: 100%; height: 200px; object-fit: contain; border-radius: 10px; margin-bottom: 12px; background: #f8f5f0;">
-        <h3>Con chip NFC</h3>
-        <p>Integra información digital: contacto, redes sociales o cualquier enlace.</p>
-      </div>
-      <div class="llavero-card">
-        <img src="imagenes/llaveros/llavero-multicolor-v2.jpg" alt="Llavero multicolor" style="width: 100%; height: 200px; object-fit: contain; border-radius: 10px; margin-bottom: 12px; background: #f8f5f0;">
-        <h3>Multicolor</h3>
-        <p>Impresión en varios colores en una sola pieza. Sin pintura, sin pegatinas.</p>
-      </div>
-    </div>
-    <div class="mt-btn">
-      <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20llavero." class="btn btn-primary">
-        <i class="fab fa-whatsapp"></i> Cotiza tu llavero ahora
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="section-light" id="proyectos">
-  <div class="container">
-    <div class="sec-head">
-      <span class="tag">🖼️ Proyectos destacados</span>
-      <h2>Nuestros trabajos</h2>
-      <p>Algunos de los proyectos que hemos desarrollado para nuestros clientes.</p>
-    </div>
-    <div class="gallery-grid">
-      <div class="gallery-item large">
-        <img src="imagenes/proyectos/proyecto-custom-intake.jpg" alt="Custom Intake Race Car">
-        <span class="gi-label">🏎️ Custom Intake Race Car</span>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="imagenes/proyectos/proyecto-llavero-mascota.jpg" alt="Llavero mascota">
-        <span class="gi-label">🐾 Llavero mascota 3D</span>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="imagenes/proyectos/proyecto-letrero-led.jpg" alt="Letrero LED">
-        <span class="gi-label">💡 Letrero LED personalizado</span>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="imagenes/proyectos/proyecto-corporativo.jpg" alt="Proyecto corporativo">
-        <span class="gi-label">🏢 Llaveros corporativos</span>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="imagenes/proyectos/proyecto-protipo-validacion.jpg" alt="Prototipos para validación">
-        <span class="gi-label">🔬 Prototipos para validación</span>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="imagenes/proyectos/proyecto-escaneo-3d.jpg" alt="Escaneo 3D">
-        <span class="gi-label">📷 Escaneo 3D</span>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="imagenes/proyectos/proyecto-multicolor.jpg" alt="Impresión multicolor">
-        <span class="gi-label">🌈 Impresión multicolor</span>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="imagenes/proyectos/proyecto-porta-botella.jpg" alt="Porta botella impreso en 3D">
-        <span class="gi-label">🍾 Porta botella 3D</span>
-      </div>
-    </div>
-    <div class="mt-btn">
-      <a href="https://www.instagram.com/solidmakermx" target="_blank" class="btn btn-ghost">
-        <i class="fab fa-instagram"></i> Ver más en Instagram
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="section-white" id="servicios">
-  <div class="container">
-    <div class="sec-head">
-      <span class="tag">🛠️ Servicios</span>
-      <h2>Más servicios de impresión 3D</h2>
-      <p>Además de llaveros, ofrecemos soluciones para prototipos, escaneo y señalización.</p>
-    </div>
-    <div class="services-grid">
-      <div class="svc-card">
-        <img src="imagenes/servicios/servicio-fdm-nuevo.jpg" alt="Impresión FDM">
-        <h3>Impresión FDM</h3>
-        <p>Prototipos funcionales y piezas resistentes con filamentos PLA, ABS, PETG y técnicos.</p>
-      </div>
-      <div class="svc-card">
-        <img src="imagenes/servicios/servicio-resina-nuevo.jpg" alt="Impresión en Resina">
-        <h3>Impresión en Resina</h3>
-        <p>Acabados de alta precisión con resolución de hasta 25 micras para piezas de detalle fino.</p>
-      </div>
-      <div class="svc-card">
-        <img src="imagenes/servicios/servicio-escaneo.jpg" alt="Escaneo 3D">
-        <h3>Escaneo 3D</h3>
-        <p>Escaneo de alta fidelidad para personas, mascotas y objetos. Ideal para réplicas exactas.</p>
-      </div>
-      <div class="svc-card">
-        <img src="imagenes/servicios/servicio-letrero.jpg" alt="Letreros LED">
-        <h3>Letreros LED</h3>
-        <p>Letreros luminosos personalizados con tu nombre o logo. Para negocios y eventos.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-light" id="tecnologia">
-  <div class="container">
-    <div class="sec-head">
-      <span class="tag">🔧 Equipo profesional</span>
-      <h2>Tecnología de alto rendimiento</h2>
-      <p>Dos impresoras, dos mundos de posibilidades. Elegimos la mejor para tu proyecto.</p>
-    </div>
-    <div class="tec-grid">
-      <div class="tec-card bambu">
-        <div class="tec-type">Impresión FDM</div>
-        <div class="tec-marca">Bambu Lab</div>
-        <p>La impresora FDM más rápida y precisa del mercado. Ideal para llaveros funcionales, multicolor y producción ágil de piezas resistentes.</p>
-        <ul>
-          <li>Multicolor hasta 16 colores</li>
-          <li>Alta velocidad de impresión</li>
-          <li>Materiales PLA, ABS, PETG, TPU</li>
-          <li>Precisión de ±0.1 mm</li>
-        </ul>
-        <img src="imagenes/tecnologia/tecnologia-bambu-lab.jpg" alt="Bambu Lab" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px; margin-top: 12px;">
-      </div>
-      <div class="tec-card formlabs">
-        <div class="tec-type">Impresión en Resina SLA</div>
-        <div class="tec-marca">Formlabs</div>
-        <p>Líder mundial en resina SLA. Para joyería, dental y piezas con detalle extremo. Acabados lisos y superficies perfectas.</p>
-        <ul>
-          <li>Resolución de hasta 25 micras</li>
-          <li>Superficies ultra-lisas</li>
-          <li>Resinas especializadas</li>
-          <li>Ideal para miniaturas y joyería</li>
-        </ul>
-        <img src="imagenes/tecnologia/tecnologia-formlabs.jpg" alt="Formlabs" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px; margin-top: 12px;">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-white" id="testimonios">
-  <div class="container">
-    <div class="sec-head">
-      <span class="tag">🗣️ Lo que dicen nuestros clientes</span>
-      <h2>Transformamos ideas en objetos reales</h2>
-      <p>Historias reales de clientes que confiaron en nosotros para crear sus proyectos.</p>
-    </div>
-    <div class="testimonios-grid">
-      <div class="testimonio-card">
-        <div class="stars">★★★★★</div>
-        <p>"Necesitaba llaveros personalizados para un evento corporativo con menos de una semana de anticipación. Solid Maker no solo cumplió el plazo, sino que la calidad de impresión fue impecable. Mis socios quedaron impresionados."</p>
-        <div class="cliente">— Ricardo M. <span>· Director de Marketing</span></div>
-      </div>
-      <div class="testimonio-card">
-        <div class="stars">★★★★★</div>
-        <p>"El escaneo 3D de mi mascota fue tan preciso que parece una foto en 3D. Mi esposa no podía creer que un llavero capturara hasta los detalles más pequeños de su cara. Excelente servicio."</p>
-        <div class="cliente">— Carlos G. <span>· Cliente particular</span></div>
-      </div>
-      <div class="testimonio-card">
-        <div class="stars">★★★★★</div>
-        <p>"Soy diseñador industrial y necesitaba un prototipo funcional en tiempo récord. En Solid Maker lo tuvieron listo en 3 días con una calidad que superó mis expectativas. Ahora los recomiendo a todos mis colegas."</p>
-        <div class="cliente">— Miguel T. <span>· Diseñador industrial</span></div>
-      </div>
-      <div class="testimonio-card">
-        <div class="stars">★★★★★</div>
-        <p>"El llavero con NFC que me hicieron es perfecto para mi negocio. Mis clientes escanean el llavero y van directo a mi perfil de Instagram. Una herramienta de marketing innovadora que no sabía que necesitaba."</p>
-        <div class="cliente">— Laura M. <span>· Emprendedora</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-  
-<section class="section-light" id="proceso">
-  <div class="container">
-    <div class="sec-head">
-      <span class="tag">⚙️ Cómo trabajamos</span>
-      <h2>De tu idea al objeto real</h2>
-      <p>Un proceso simple, transparente y orientado a que obtengas exactamente lo que imaginas.</p>
-    </div>
-    <div class="proceso-grid">
-      <div class="step-card">
-        <div class="step-num">01</div>
-        <h3>Cuéntanos tu idea</h3>
-        <p>Comparte tu concepto, archivo o referencia. Te asesoramos sobre tecnología, material y diseño.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">02</div>
-        <h3>Cotización clara</h3>
-        <p>Recibes un presupuesto detallado con tiempo de entrega y recomendaciones técnicas. Sin sorpresas.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">03</div>
-        <h3>Impresión profesional</h3>
-        <p>Producimos tu pieza con impresoras de última generación, controlando calidad en cada etapa.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">04</div>
-        <h3>Entrega en CDMX</h3>
-        <p>Recibes tu objeto impreso, listo para usar o regalar. Envíos disponibles dentro de la ciudad.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-white" id="materiales">
-  <div class="container">
-    <div class="sec-head">
-      <span class="tag">🧪 Materiales</span>
-      <h2>Materiales disponibles</h2>
-      <p>Elegimos el material correcto según el uso final, el acabado deseado y tu presupuesto.</p>
-    </div>
-    <div class="mat-grid">
-      <div class="mat-card">PLA<small>Uso general</small></div>
-      <div class="mat-card">ABS<small>Alta resistencia</small></div>
-      <div class="mat-card">PETG<small>Flexible y duradero</small></div>
-      <div class="mat-card">Resina<small>Ultra-detalle</small></div>
-    </div>
-  </div>
-</section>
-
-<section class="section-light" id="contacto">
-  <div class="container">
-    <div class="sec-head">
-      <span class="tag">📬 Contacto</span>
-      <h2>¿Tienes un proyecto en mente?</h2>
-      <p>Cuéntanos tu idea y en menos de 24 horas te respondemos con una cotización.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-block">
-        <h3>Estamos en CDMX</h3>
-        <p>Respondemos por WhatsApp, correo o a través del formulario. Elige lo que te sea más cómodo.</p>
-
-        <div class="horarios-card">
-          <div class="hc-title">⏱ Horarios de atención</div>
-          <p>Lunes a Viernes · 9:00 AM — 5:00 PM</p>
-          <p>Sábados · 9:00 AM — 1:00 PM</p>
-        </div>
-
-        <div class="contact-links">
-          <a href="https://wa.me/525574425356" class="contact-link">
-            <div class="cl-icon"><i class="fab fa-whatsapp" style="color: #25D366;"></i></div>
-            <div>
-              <div class="cl-label">WhatsApp</div>
-              <div class="cl-text">+52 55 7442 5356</div>
-            </div>
-          </a>
-          <a href="mailto:solid_maker@outlook.com" class="contact-link">
-            <div class="cl-icon"><i class="fas fa-envelope" style="color: var(--azul);"></i></div>
-            <div>
-              <div class="cl-label">Correo electrónico</div>
-              <div class="cl-text">solid_maker@outlook.com</div>
-            </div>
-          </a>
-          <a href="https://www.instagram.com/solidmakermx" target="_blank" class="contact-link">
-            <div class="cl-icon"><i class="fab fa-instagram" style="color: #E1306C;"></i></div>
-            <div>
-              <div class="cl-label">Instagram</div>
-              <div class="cl-text">@solidmakermx</div>
-            </div>
-          </a>
-          <a href="#" class="contact-link">
-            <div class="cl-icon"><i class="fas fa-map-marker-alt" style="color: var(--verde);"></i></div>
-            <div>
-              <div class="cl-label">Ubicación</div>
-              <div class="cl-text">Ciudad de México, México</div>
-            </div>
-          </a>
-        </div>
-
-        <div style="margin-top: 1.5rem;">
-          <a href="https://wa.me/525574425356?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20me%20interesa%20cotizar%20un%20proyecto." class="btn btn-wa" style="width: 100%; justify-content: center;">
-            <i class="fab fa-whatsapp"></i> Cotizar por WhatsApp
-          </a>
-        </div>
-      </div>
-
-      <div class="lead-form">
-        <h3>Envíanos tu proyecto</h3>
-        <p class="f-sub">Te respondemos en menos de 24 horas hábiles</p>
-        <form action="https://formspree.io/f/mvzjabgz" method="POST">
-          <div class="field"><input type="text" name="nombre" placeholder="Tu nombre" required></div>
-          <div class="field"><input type="email" name="email" placeholder="Tu correo electrónico" required></div>
-          <div class="field">
-            <select name="interes">
-              <option value="">¿Qué te interesa?</option>
-              <option>Llavero personalizado</option>
-              <option>Llavero con NFC</option>
-              <option>Llavero para empresa/evento</option>
-              <option>Impresión FDM</option>
-              <option>Impresión en Resina</option>
-              <option>Escaneo 3D</option>
-              <option>Letreros LED</option>
-              <option>Quiero asesoría</option>
-            </select>
-          </div>
-          <div class="field"><textarea name="mensaje" placeholder="Cuéntanos tu idea, diseño o cantidad..."></textarea></div>
-          <button type="submit" class="submit-btn">Enviar proyecto →</button>
-          <p class="form-note">Sin spam. Tus datos solo se usan para contactarte.</p>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="cta-final">
-  <div class="container">
-    <h2>¿Listo para crear<br>algo único?</h2>
-    <p>Cotiza sin compromiso. Te asesoramos en diseño, material y tecnología.</p>
-    <div class="cta-btns">
-      <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20proyecto." class="btn" style="background: #fff; color: var(--azul-oscuro);">
-        <i class="fab fa-whatsapp"></i> Cotiza tu proyecto ahora
-      </a>
-      <a href="mailto:solid_maker@outlook.com" class="btn btn-outline-white">
-        <i class="fas fa-envelope"></i> Enviar correo
-      </a>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-col footer-col-center">
-        <a href="/" class="footer-logo">
-          <img src="Logo Solid Maker.png"
-               alt="Solid Maker"
-               class="footer-logo-img">
-        </a>
-        <p style="max-width:280px;">Transformamos tus ideas en objetos reales con impresión 3D de alta precisión.</p>
-      </div>
-
-      <div class="footer-col footer-col-center">
-        <h4>Contacto</h4>
-        <a href="https://wa.me/525574425356" style="color:#25D366;">+52 55 7442 5356</a>
-        <a href="mailto:solid_maker@outlook.com">solid_maker@outlook.com</a>
-        <p>📍 Ciudad de México</p>
-        <p style="font-size:0.8rem; color:rgba(255,255,255,0.35);">L–V 9am–5pm · Sáb 9am–1pm</p>
-      </div>
-
-      <div class="footer-col footer-col-center">
-        <h4>Síguenos</h4>
-        <div class="footer-social">
-          <a href="https://wa.me/525574425356" target="_blank" class="social-icon wa" aria-label="WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-          </a>
-          <a href="https://www.instagram.com/solidmakermx" target="_blank" class="social-icon ig" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="mailto:solid_maker@outlook.com" class="social-icon email" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
-        <p style="font-size:0.8rem; color:rgba(255,255,255,0.35);">Conecta con nosotros</p>
-      </div>
-
-      <div class="footer-col footer-col-center">
-        <h4 style="color: var(--beige);">Desarrollado por</h4>
-        <div class="sosializarte-credit">
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 6px; width: 100%;">
-            <span style="font-size: 1.6rem; filter: grayscale(0.3);">⚡</span>
-            <div class="credit-text">
-              <strong>Sosializarte</strong><br>
-              <span style="font-size: 0.7rem; color: rgba(255,255,255,0.3);">
-                Estrategia · Diseño · Desarrollo
-              </span>
-              <br>
-              <span style="font-size: 0.65rem; color: rgba(255,255,255,0.25);">
-                <a href="#" style="color: rgba(255,255,255,0.3);">sosializarte.com</a>
-              </span>
-            </div>
-            <div style="display: flex; gap: 8px; margin-top: 4px;">
-              <span style="font-size: 0.6rem; color: rgba(255,255,255,0.15);">✦</span>
-              <span style="font-size: 0.6rem; color: rgba(255,255,255,0.15);">✦</span>
-              <span style="font-size: 0.6rem; color: rgba(255,255,255,0.15);">✦</span>
-            </div>
-          </div>
-        </div>
-        <p style="font-size:0.65rem; color:rgba(255,255,255,0.2); margin-top: 4px;">
-          Chatbot · Web · Automatización
-        </p>
-      </div>
-    </div>
-
-    <div class="footer-divider"></div>
-
-    <div class="footer-bottom">
-      <span>© 2025 Solid Maker — Todos los derechos reservados</span>
-      <span>Hecho con ❤️ en CDMX por <strong style="color: var(--beige); font-weight: 400;">Sosializarte</strong></span>
-    </div>
-  </div>
-</footer>
-
-<a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20proyecto." class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-  <i class="fab fa-whatsapp"></i>
-</a>
-
-<!-- ═══ BOTPRESS CHATBOT - SOLID MAKER ═══ -->
-<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-<script>
-  window.botpressWebChat.init({
-    "botId": "e2cd3e85-167e-41f4-96a2-28f2a3453cf5",
-    "clientId": "467f4206-5c04-45c1-a173-bd1675055d3e",
-    /* Se eliminaron hostUrl y messagingUrl para evitar el error de NoSuchKey */
-    "lazySocket": true,
-    "themeName": "prism",
-    "botName": "Solid Maker",
-    "avatarUrl": "https://solidmaker.mx/Logo Solid Maker.png",
-    "stylesheet": "https://webchat.botpress.app/themes/v2/prism.css",
-    "frontendVersion": "v2",
-    "showPoweredBy": false,
-    "useSessionStorage": true,
-    "enableConversationDeletion": true,
-    "theme": {
-      "colors": {
-        "headerBg": "#669933",
-        "headerText": "#FFFFFF",
-        "inputBg": "#F8F5F0",
-        "inputText": "#1A1A1A",
-        "userMessageBg": "#336699",
-        "userMessageText": "#FFFFFF",
-        "botMessageBg": "#F8F5F0",
-        "botMessageText": "#1A1A1A"
-      }
-    }
-  });
-</script>
-
-<script>
-  document.getElementById('hamburger').addEventListener('click', function() {
-    document.getElementById('mobileMenu').classList.toggle('open');
-  });
-  document.querySelectorAll('.mobile-menu a').forEach(function(link) {
-    link.addEventListener('click', function() {
-      document.getElementById('mobileMenu').classList.remove('open');
-    });
-  });
-</script>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('open');
+        });
+        document.querySelectorAll('.mobile-menu a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.getElementById('mobileMenu').classList.remove('open');
+            });
+        });
+    </script>
 
 </body>
 </html>
