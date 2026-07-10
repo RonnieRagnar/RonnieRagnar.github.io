@@ -1786,14 +1786,13 @@
   <i class="fab fa-whatsapp"></i>
 </a>
 
+<!-- ═══ BOTPRESS CHATBOT - SOLID MAKER ═══ -->
 <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script>
   window.botpressWebChat.init({
     "botId": "e2cd3e85-167e-41f4-96a2-28f2a3453cf5",
     "clientId": "467f4206-5c04-45c1-a173-bd1675055d3e",
-    "webhookId": "467f4206-5c04-45c1-a173-bd1675055d3e",
-    "hostUrl": "https://cdn.botpress.cloud",
-    "messagingUrl": "https://messaging.botpress.cloud",
+    /* Se eliminaron hostUrl y messagingUrl para evitar el error de NoSuchKey */
     "lazySocket": true,
     "themeName": "prism",
     "botName": "Solid Maker",
