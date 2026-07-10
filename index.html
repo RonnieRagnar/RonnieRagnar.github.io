@@ -1326,51 +1326,91 @@
             box-shadow: 0 8px 24px rgba(51, 102, 153, 0.4);
         }
 
-        /* ─ CRÉDITOS SOSIALIZARTE ─ */
+        /* ─ CRÉDITOS SOSIALIZARTE (REDISEÑADO) ─ */
         .sosializarte-credit {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: rgba(102, 153, 51, 0.08);
+            border: 1px solid rgba(102, 153, 51, 0.2);
             border-radius: 12px;
-            padding: 16px 20px;
+            padding: 20px 24px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
+            gap: 14px;
             flex-wrap: wrap;
             transition: all 0.3s ease;
+            width: 100%;
         }
         .sosializarte-credit:hover {
-            border-color: rgba(255, 204, 153, 0.3);
-            background: rgba(255, 255, 255, 0.06);
+            background: rgba(102, 153, 51, 0.15);
+            border-color: var(--verde);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(102, 153, 51, 0.15);
+        }
+        .sosializarte-credit .credit-icon {
+            font-size: 1.8rem;
+            color: var(--verde);
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+        .sosializarte-credit:hover .credit-icon {
+            opacity: 1;
         }
         .sosializarte-credit .credit-text {
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
             font-weight: 300;
             text-align: center;
             line-height: 1.6;
         }
         .sosializarte-credit .credit-text strong {
-            color: var(--beige);
+            color: var(--verde);
             font-weight: 600;
-        }
-        .sosializarte-credit .credit-text a {
-            color: var(--beige);
-            text-decoration: none;
-            font-weight: 500;
             transition: color 0.3s ease;
         }
-        .sosializarte-credit .credit-text a:hover {
-            color: #fff;
-            text-decoration: underline;
+        .sosializarte-credit:hover .credit-text strong {
+            color: var(--beige);
         }
-        .sosializarte-credit .credit-icon {
-            font-size: 1.2rem;
-            color: rgba(255, 204, 153, 0.6);
+        .sosializarte-credit .credit-text a {
+            color: var(--verde);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        .sosializarte-credit .credit-text a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--beige);
+            transition: width 0.3s ease;
+        }
+        .sosializarte-credit .credit-text a:hover {
+            color: var(--beige);
+        }
+        .sosializarte-credit .credit-text a:hover::after {
+            width: 100%;
         }
         .sosializarte-credit .credit-divider {
             color: rgba(255, 255, 255, 0.1);
             font-size: 0.6rem;
+            padding: 0 4px;
+        }
+        .sosializarte-credit .credit-badge {
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 50px;
+            padding: 2px 12px;
+            transition: all 0.3s ease;
+        }
+        .sosializarte-credit:hover .credit-badge {
+            color: rgba(255, 255, 255, 0.4);
+            border-color: rgba(102, 153, 51, 0.3);
         }
 
         .footer-divider {
@@ -1390,61 +1430,6 @@
             .footer-bottom {
                 flex-direction: row;
                 justify-content: space-between;
-            }
-        }
-
-        /* ─ WA FLOAT ─ */
-        .wa-float {
-            position: fixed;
-            bottom: 22px;
-            left: 22px;
-            /* WhatsApp a la izquierda */
-            z-index: 999;
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            background: #25D366;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.6rem;
-            box-shadow: 0 4px 18px rgba(37, 211, 102, 0.4);
-            text-decoration: none;
-            transition: transform 0.25s, box-shadow 0.25s;
-        }
-        .wa-float:hover {
-            transform: scale(1.08);
-            box-shadow: 0 8px 28px rgba(37, 211, 102, 0.5);
-        }
-
-        /* ─ FIX: WIDGET DE BOTPRESS SIEMPRE A LA DERECHA Y POR ENCIMA ─ */
-        /* Fuerza el burbuja/botón flotante de Botpress a la esquina inferior
-           DERECHA, con z-index superior al de WhatsApp, para que nunca queden
-           encimados ni se tapen entre sí (en desktop y en móvil). */
-        #bp-web-widget-container,
-        .bpFab,
-        .bpWebchat,
-        iframe#bp-web-widget {
-            z-index: 100000 !important;
-        }
-        .bpFab {
-            right: 22px !important;
-            left: auto !important;
-            bottom: 22px !important;
-        }
-        /* En pantallas muy angostas, deja aire entre los dos botones flotantes */
-        @media (max-width: 420px) {
-            .wa-float {
-                bottom: 16px;
-                left: 16px;
-                width: 50px;
-                height: 50px;
-                font-size: 1.4rem;
-            }
-            .bpFab {
-                right: 16px !important;
-                bottom: 16px !important;
             }
         }
 
@@ -1965,30 +1950,21 @@
                 </div>
 
                 <div class="footer-col footer-col-center">
-                    <h4 style="color: var(--beige);">Desarrollado por</h4>
+                    <h4 style="color: var(--verde);">Desarrollado por</h4>
                     <div class="sosializarte-credit">
-                        <div style="display: flex; flex-direction: column; align-items: center; gap: 6px; width: 100%;">
-                            <span style="font-size: 1.6rem; filter: grayscale(0.3);">⚡</span>
-                            <div class="credit-text">
-                                <strong>Sosializarte</strong><br>
-                                <span style="font-size: 0.7rem; color: rgba(255,255,255,0.3);">
-                                    Estrategia · Diseño · Desarrollo
-                                </span>
-                                <br>
-                                <span style="font-size: 0.65rem; color: rgba(255,255,255,0.25);">
-                                    <a href="#" style="color: rgba(255,255,255,0.3);">sosializarte.com</a>
-                                </span>
-                            </div>
-                            <div style="display: flex; gap: 8px; margin-top: 4px;">
-                                <span style="font-size: 0.6rem; color: rgba(255,255,255,0.15);">✦</span>
-                                <span style="font-size: 0.6rem; color: rgba(255,255,255,0.15);">✦</span>
-                                <span style="font-size: 0.6rem; color: rgba(255,255,255,0.15);">✦</span>
-                            </div>
+                        <span class="credit-icon">⚡</span>
+                        <div class="credit-text">
+                            <strong>Sosializarte</strong>
+                            <span class="credit-divider">·</span>
+                            <span style="color: rgba(255,255,255,0.3);">Estrategia · Diseño · Desarrollo</span>
+                            <br>
+                            <a href="https://sosializarte.com" target="_blank" rel="noopener noreferrer">
+                                sosializarte.com
+                            </a>
+                            <span class="credit-divider">·</span>
+                            <span class="credit-badge">Chatbot · Web · Automatización</span>
                         </div>
                     </div>
-                    <p style="font-size:0.65rem; color:rgba(255,255,255,0.2); margin-top: 4px;">
-                        Chatbot · Web · Automatización
-                    </p>
                 </div>
             </div>
 
@@ -1996,14 +1972,10 @@
 
             <div class="footer-bottom">
                 <span>© 2025 Solid Maker — Todos los derechos reservados</span>
-                <span>Hecho con ❤️ en CDMX por <strong style="color: var(--beige); font-weight: 400;">Sosializarte</strong></span>
+                <span>Hecho con ❤️ en CDMX por <strong style="color: var(--verde); font-weight: 400;">Sosializarte</strong></span>
             </div>
         </div>
     </footer>
-
-    <a href="https://wa.me/525574425356?text=Hola%2C%20quiero%20cotizar%20un%20proyecto." class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
 
     <!-- ═══ BOTPRESS CHATBOT - SOLID MAKER (embed oficial v3.6) ═══ -->
     <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
